@@ -12,7 +12,7 @@ const Navbar = () => {
           .Now You Can Get Latest News Right At Your Finger Tip.
         </p>
 
-        <header className="flex items-center justify-center px-[200px] bg-primary h-[116px] text-gray text-[16px] border-b">
+        <header className="flex items-center  sm:justify-center justify-between sm:px-[200px] px-6 bg-primary h-[116px] text-gray text-[16px] border-b-rounded">
           <div className="md:flex hidden gap-8">
             <select name="NewAuto" id="AUTO" className="bg-transparent">
               <option value="What's New In Auto">Whats's New in Auto</option>
@@ -25,20 +25,20 @@ const Navbar = () => {
           </div>
 
           <figure>
-            <img src="./auto 1.png" alt="logo" className="min-w-[300px]" />
+            <img src="./auto 1.png" alt="logo" className="sm:min-w-[300px] sm:mx-20" />
           </figure>
 
-          <div className="flex items-center gap-2">
-            <p>Car Buying Goods</p>
+          <div className="md:flex hidden items-center gap-4 whitespace-nowrap">
+            <p className="">Car Buying Goods</p>
             <select name="Motorsports" id="MotorSports" className="bg-transparent">
               <option value="Motorsports">Motorsports</option>
             </select>
             <p>EMI Calculator</p>
-            <div className="flex items-center gap-2">
+          </div>
+          <div className="ml-4 flex items-center gap-4 text-2xl">
               <CiSearch />
               <RxHamburgerMenu />
             </div>
-          </div>
 
         </header>
       </div>
