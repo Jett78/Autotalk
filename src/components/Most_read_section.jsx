@@ -10,7 +10,7 @@ function Most_read_section() {
     return (
         <>
             <div>
-                <section className="most-read">
+                <section className="most-read mt-24">
                     <div className="container">
                         <div className="title">
                             <p className='text-primary text-xl font-medium mb-2 md:text-3xl'>Most Read</p>

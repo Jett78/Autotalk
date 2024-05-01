@@ -10,3 +10,18 @@
   box-sizing: border-box;
 
 }
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.cat_img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
