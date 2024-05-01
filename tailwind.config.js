@@ -8,7 +8,6 @@ export default {
       colors: {
         primary: "#3A5993",
         secondary: "#F2F7FC",
-        darkgray: ""
       },
       screens: {
         'sm': '520px',
