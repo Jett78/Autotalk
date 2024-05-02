@@ -50,7 +50,7 @@ const innovation = [
 
 const TechInnovation = () => {
   return (
-    <main className="min-h-[1018px] bg-primary">
+    <main className="min-h-[1018px] bg-primary px-4 pb-8">
       <header className="px-4 flex justify-between max-w-[1320px] mx-auto md:pt-[100px] pt-10 border-b border-gray">
         <div >
           <h2 className="sm:text-[24px] text-[20px] font-semibold text-purple tracking-wide">Tech and Innovation</h2>
