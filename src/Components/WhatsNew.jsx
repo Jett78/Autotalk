@@ -47,7 +47,7 @@ const scooters = [
 
 const WhatsNew = () => {
   return (
-   <main  className="min-h-[1018px] max-w-[1320px] mx-auto mt-20 px-4 ">
+   <main  className="min-h-[1018px] max-w-[1320px] mx-auto px-4 ">
     <div className='border-b border-gray'>
         <h2 className="sm:text-[24px] text-[20px] font-semibold text-purple tracking-wide">What's New in Auto</h2>
         <p className="sm:text-[16px] text-[14px] font-normal text-gray my-4">See what's happening new in auto</p>
@@ -91,7 +91,7 @@ const WhatsNew = () => {
         </div>
     </secton>
 
-    {/* <Subscribe/> */}
+    <Subscribe/>
   </div>
    </main>
   )
