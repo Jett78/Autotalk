@@ -26,7 +26,7 @@ function Categories_section() {
                     </div>
                     <hr className='my-3' />
                     <div className="relative flex items-center mt-10">
-                        <img src={left_arrow} alt="" onClick={slideLeft} className="absolute" />
+                        <img src={left_arrow} alt="" onClick={slideLeft} className="absolute cursor-pointer" />
                         <div id="slider" className='w-full h-full overflow-x-scroll flex whitespace-nowrap scroll-smooth no-scrollbar'>
                             {
                                 data.map((item) => {
