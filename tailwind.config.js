@@ -9,6 +9,7 @@ export default {
       colors:{
         gray:"#686163",
         purple:"#3C4DA0",
+        darkpurple:"#334B75",
         primary:"#A7CDE9"
       }
     },
