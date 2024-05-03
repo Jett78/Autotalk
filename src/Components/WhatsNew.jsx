@@ -17,7 +17,7 @@ const WhatsNew = () => {
 
     <secton className="max-w-[380px] h-[324px] ">
         <nav className='flex items-center justify-between border-b mx-auto pb-6 '>
-            <h2 className="sm:text-[24px] text-[20px] text-purple tracking-wide">4-Wheeler</h2>
+            <h2 className="sm:text-[24px] text-[18px] text-purple tracking-wide">4-Wheeler</h2>
             <a href="#" className="md:text-[16px] text-[12px] font-normal text-gray whitespace-nowrap">View all</a>
         </nav>
         <div className='grid gap-6 py-8'>
@@ -29,8 +29,8 @@ const WhatsNew = () => {
 
     <secton className="w-[380px]">
         <nav className='flex items-center justify-between border-b pb-6 px-1'>
-            <h2 className="sm:text-[24px] text-[20px] text-purple tracking-wide">2-Wheeler</h2>
-            <a href="#" className="text-[16px] font-normal text-gray whitespace-nowrap">View all</a>
+            <h2 className="sm:text-[24px] text-[18px] text-purple tracking-wide">2-Wheeler</h2>
+            <a href="#" className="md:text-[16px] text-[12px]  font-normal text-gray whitespace-nowrap">View all</a>
         </nav>
         <div className='grid gap-6 py-8'>
             {bikes.map((info,index)=> (
@@ -41,8 +41,8 @@ const WhatsNew = () => {
 
     <secton className="w-[380px]">
          <nav className='flex items-center justify-between border-b pb-6 px-1'>
-            <h2 className="sm:text-[24px] text-[20px] text-purple tracking-wide">2-Wheeler</h2>
-            <a href="#" className="text-[16px] font-normal text-gray whitespace-nowrap">View all</a>
+            <h2 className="sm:text-[24px] text-[18px] text-purple tracking-wide">2-Wheeler</h2>
+            <a href="#" className="md:text-[16px] text-[12px]  font-normal text-gray whitespace-nowrap">View all</a>
          </nav>
          <div className='grid gap-6 py-8'>
             {scooters.map((info,index)=> (

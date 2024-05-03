@@ -1,12 +1,13 @@
 import React from "react";
-import WhatsNewCard from "./WhatsNewCard";
 import {cars} from "../db/Data"
 import {bikes} from "../db/Data"
+import MoreMotorsportscard from "./MoreMotorsportscard";
 
 const MoreMotorsports = () => {
+    
   return (
-    <main className="bg-lightgreen h-[654px] ">
-      <div className=" max-w-[1320px] md:mx-auto mx-4 py-[80px]">
+    <main className="bg-lightgreen min-h-[654px] mt-6 md:py-20 py-6 ">
+      <div className=" max-w-[1320px] lg:mx-auto mx-4 ">
         <h2 className="sm:text-[24px] text-[20px] font-semibold text-purple tracking-wide">
           More in Motorsports & DIY Maintainance Tips
         </h2>
@@ -14,11 +15,11 @@ const MoreMotorsports = () => {
           See what's happening new in auto
         </p>
 
-        <div className="flex flex-wrap lg:justify-between gap-4 justify-center  mt-10">
-          <secton className="max-w-[380px] h-[324px] bg-red-200 ">
+        <div className="flex flex-wrap xl:justify-between gap-8 justify-center  mt-10 ">
+          <secton className="max-w-[580px] h-[324px] ">
             <nav className="flex items-center justify-between border-b mx-auto pb-6 ">
-              <h2 className="sm:text-[24px] text-[20px] text-purple tracking-wide">
-                4-Wheeler
+              <h2 className="sm:text-[24px] text-[18px] text-purple tracking-wide">
+                Motorsports
               </h2>
               <a
                 href="#"
@@ -28,29 +29,29 @@ const MoreMotorsports = () => {
               </a>
             </nav>
             
-            <div className="grid gap-6 py-8">
+            <div className="grid gap-8 py-8">
               {cars.map((info, index) => (
-                <WhatsNewCard key={index} info={info} />
+                <MoreMotorsportscard key={index} info={info} />
               ))}
             </div>
           </secton>
 
-          <secton className="w-[380px]">
-            <nav className="flex items-center justify-between border-b pb-6 px-1">
-              <h2 className="sm:text-[24px] text-[20px] text-purple tracking-wide">
-                2-Wheeler
+          <secton className="max-w-[538px]">
+            <nav className="flex items-center gap-2 justify-between border-b pb-6 px-1">
+              <h2 className="sm:text-[24px] text-[18px] text-purple tracking-wide">
+                DIY & Maintainance Tips
               </h2>
               <a
                 href="#"
-                className="text-[16px] font-normal text-gray whitespace-nowrap"
+                className="md:text-[16px] text-[12px]  font-normal text-gray whitespace-nowrap"
               >
                 View all
               </a>
             </nav>
 
-            <div className="grid gap-6 py-8">
+            <div className="grid gap-8 py-8">
               {bikes.map((info, index) => (
-                <WhatsNewCard key={index} info={info} />
+                <MoreMotorsportscard key={index} info={info} />
               ))}
             </div>
           </secton>
