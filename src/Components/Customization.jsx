@@ -1,51 +1,7 @@
 import React from 'react'
 import { FiArrowUpRight } from "react-icons/fi";
 import TechInnovationCard from "./TechInnovationCard";
-
-const innovation = [
-    {
-        img:"./cars/image 52.png",
-        title:"New Kia Sonnet facelift unveil on Dec. 14, here are more details",
-        name:"Admin",
-        type:"4-wheeler",
-        date:"Apr 23,2023",
-    },
-    {
-        img:"./cars/image 54.png",
-        title:"2023 Porsche Panamera launched in India, priced from Rs 1.68 crore",
-        name:"Admin",
-        type:"4-wheeler",
-        date:"Apr 23,2023",
-    },
-    {
-        img:"./cars/image 59.png",
-        title:"Scorpio drives demand for Mahindra SUVs with highest monthly bookings in Q2",
-        name:"Admin",
-        type:"4-wheeler",
-        date:"Apr 23,2023",
-    },
-    {
-        img:"./cars/image 63.png",
-        title:"Ferrari SF90 XX Stradale makes debut at Casa Ferrari Abu Dhabi",
-        name:"Admin",
-        type:"4-wheeler",
-        date:"Apr 23,2023",
-    },
-    {
-        img:"./cars/image 64.png",
-        title:"New Kia Sonnet facelift unveil on Dec. 14, here are more details",
-        name:"Admin",
-        type:"4-wheeler",
-        date:"Apr 23,2023",
-    },
-    {
-        img:"./cars/image 65.png",
-        title:"2023 Porsche Panamera launched in India, priced from Rs 1.68 crore",
-        name:"Admin",
-        type:"4-wheeler",
-        date:"Apr 23,2023",
-    },
-]
+import {innovation} from "../db/Data"
 
 const Customization = () => {
   return (
