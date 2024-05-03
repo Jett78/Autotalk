@@ -10,8 +10,8 @@ const TechInnovationCard = ({inovdata}) => {
         <img src={img} alt="carimages" className='max-h-[200px]' />
       </figure>
      <section className='bg-white rounded-b-xl px-6 py-4 shadow-lg'>
-     <h2 className='sm:text-[18px] text-[14px] font-normal text-gray '>{title}</h2>
-      <div className='sm:text-[14px] text-[10px] flex items-center justify-start gap-4 pt-2 text-gray'>
+     <h2 className='sm:text-[16px] text-[14px] text-gray '>{title}</h2>
+      <div className='sm:text-[14px] text-[10px] font-normal flex items-center justify-start gap-4 pt-2 text-gray'>
       <p className='flex items-center gap-1'><FaCircleUser className='text-xl' />{name}</p>
         <p>{type}</p>
         <p>{date}</p>
