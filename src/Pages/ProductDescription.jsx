@@ -5,6 +5,7 @@ import Productdetails from '../Components/Productdetails'
 import { Tesla } from '../db/Data'
 import Emi from '../Components/Emi'
 import Banks from '../Components/Banks'
+import Autoloan from '../Components/Autoloan'
 
 const ProductDescription = () => {
   return (
@@ -23,7 +24,7 @@ const ProductDescription = () => {
           <Emi/>
           <Banks/>
         </div>
-  
+        <Autoloan/>
     </div>
    </main>
   )
