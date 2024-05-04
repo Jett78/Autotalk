@@ -7,17 +7,17 @@ const Emi = () => {
     <form action="#">
       <section className='xl:flex grid justify-between mt-2'>
          <div className='grid gap-2'>
-        <label htmlFor="brand">Brand</label>
-        <select name="Brand" id="brand" className='xl:w-[300px] sm:w-[500px] lg:w-[100px] border border-gray rounded-lg p-3'>
-            <option value="Tesla">Tesla</option>
-        </select>
+            <label htmlFor="brand">Brand</label>
+             <select name="Brand" id="brand" className='xl:w-[300px] sm:w-[500px] lg:w-[100px] border border-gray rounded-lg p-3'>
+               <option value="Tesla">Tesla</option>
+             </select>
         </div>
        <div className='grid gap-2'>
-       <label htmlFor="model">Model</label>
-        <select name="model" id="model" className='xl:w-[300px] sm:w-[500px] lg:w-[100px] border border-gray rounded-lg p-3'>
-            <option value="Tesla S">Tesla S</option>
-        </select>
-       </div>
+            <label htmlFor="model">Model</label>
+               <select name="model" id="model" className='xl:w-[300px] sm:w-[500px] lg:w-[100px] border border-gray rounded-lg p-3'>
+                 <option value="Tesla S">Tesla S</option>
+                </select>
+        </div>
          </section>
 
          <section className='my-4 grid gap-4 border-b pb-4'>
