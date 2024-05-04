@@ -15,7 +15,7 @@
   }
 
   .commonButton {
-    width: 203px;
+    width: 200px;
     height: 51px;
     background-color: #A7CDE9; 
     border-radius: 25px; 
@@ -28,4 +28,14 @@
   .commonButton:hover {
     background-color: #4169e1; 
     color: #fff; 
+  }
+  @media (max-width: 768px) {
+    .commonButton {
+        width: 120px; 
+        height: 40px;
+        font-size: 12px;
+    }
+}
+  .tableborder{
+    border: 1px solid rgb(185, 185, 185);
   }

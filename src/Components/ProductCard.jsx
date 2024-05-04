@@ -7,17 +7,17 @@ const ProductCard = ({tesla}) => {
 
   return (
     <main>
-      <div className="mt-8 flex flex-wrap gap-4">
+      <div className="mt-8 flex flex-wrap justify-center gap-4">
         <section>
           <figure>
-            <img src={img} alt="car" className="w-[426px] h-[333px] object-cover"/>
+            <img src={img} alt="car" className="sm:w-[426px] w-[270px]  sm:h-[333px] h-[80] object-cover"/>
           </figure>
           <div className="mt-2">
             {smallimg.map((imgs, index) => (
               <div key={index} className="flex gap-5">
                 {/* Map through the images in each smallimg object */}
                 {Object.values(imgs).map((image, i) => (
-                  <img key={i} src={image} alt='smallimg' />
+                  <img key={i} src={image} className="md:w-[90px] w-[52px]" alt='smallimg' />
                 ))}
               </div>
             ))}
@@ -39,15 +39,15 @@ const ProductCard = ({tesla}) => {
             </div>
           </div>
 
-         <div className="grid gap-4">
+         <div className="grid sm:gap-4 gap-2 mt-2 font-normal text-gray sm:text-[16px] text-[12px]">
           <p>{desc}</p>
           <p>{desc}</p>
-          <p>{desc}</p>
-          <p>{desc}</p>
+          <p className="sm:block hidden">{desc}</p>
+          <p className="sm:block hidden">{desc}</p>
          </div>
 
         </section>
-        <div className="flex gap-6 my-6">
+        <div className="flex flex-wrap justify-center gap-6 my-6">
             <button className="commonButton">Details</button>
             <button className="commonButton">EMI Calculator</button>
             <button className="commonButton">Auto Loan</button>

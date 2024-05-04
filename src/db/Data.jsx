@@ -113,7 +113,7 @@ export const Tesla = [
         brakes:"disc",
         seat:5,
         battery:100,
-        range:350-400,
+        range:350,
         weigth:2250,
     },
 ]

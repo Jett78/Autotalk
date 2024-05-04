@@ -11,10 +11,13 @@ const ProductDescription = () => {
     <div className='max-w-[1320px] h-[555px] mx-auto'>
         <div>
         {Tesla.map((tesla,index) => (
-            <ProductCard key={index} tesla={tesla}/>
+           <div key={index}>
+             <ProductCard  tesla={tesla}/>
+             <Productdetails tesla={tesla}/>
+           </div>
         ))}
         </div>
-        <Productdetails/>
+  
     </div>
    </main>
   )
