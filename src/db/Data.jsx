@@ -90,4 +90,30 @@ export const bikes = [
         date:"Apr 23,2023",
     },
 ]
-  
+
+export const Tesla = [
+    {
+        img:"./cars/image 65.png",
+          smallimg : [
+            {
+                img2:"./cars/image 66.png",
+                img3:"./cars/image 67.png",
+                img4:"./cars/image 68.png",
+                img5:"./cars/image 69.png",
+            },
+          ],
+        brand:"Tesla S",
+        model:"Tesla s",
+        price:"Rs.25,000",
+        desc:"Model S is built from the ground up as an electric vehicle, with a high-strength architecture and floor-mounted battery pack for incredible occupant protection and low rollover risk. Every new Model S includes Tesla's latest active safety features, such as Automatic Emergency Braking, at no extra cost",
+        releasedate:"Oct 6,2021",
+        engine:670,
+        milage:124,
+        Transmission:"automatic",
+        brakes:"disc",
+        seat:5,
+        battery:100,
+        range:350-400,
+        weigth:2250,
+    },
+]

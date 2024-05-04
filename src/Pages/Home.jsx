@@ -7,11 +7,12 @@ import Vintage from '../Components/Vintage'
 import Customization from '../Components/Customization'
 import Automotive from '../Components/Automotive'
 import MoreMotorsports from '../Components/MoreMotorsports'
+import Header from '../Components/Header'
 
 const Home = () => {
   return (
   <main>
-    <Navbar/>
+    <Header/>
     <Herosection/>
     <TechInnovation/>
     <WhatsNew/>
