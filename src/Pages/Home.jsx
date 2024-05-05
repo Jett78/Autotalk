@@ -8,6 +8,7 @@ import Customization from '../Components/Customization'
 import Automotive from '../Components/Automotive'
 import MoreMotorsports from '../Components/MoreMotorsports'
 import Header from '../Components/Header'
+import Footer from '../Components/Footer'
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
     <Vintage/>
     <Customization/>
     <Automotive/>
+    <Footer/>
   </main>
   )
 }

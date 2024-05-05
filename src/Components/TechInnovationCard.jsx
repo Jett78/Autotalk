@@ -5,7 +5,7 @@ import { FaCircleUser } from "react-icons/fa6";
 const TechInnovationCard = ({inovdata}) => {
     const{img,title,name,type,date} = inovdata;
   return (
-    <div className='w-[427px] max-h-[329px] mx-3'>
+    <div className='max-w-[427px] max-h-[329px] mx-3'>
       <figure>
         <img src={img} alt="carimages" className='max-h-[200px]' />
       </figure>

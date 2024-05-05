@@ -5,7 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <main className="bg-darkpurple min-h-[600px] py-12 px-2 text-white list-none ">
+    <main className="bg-darkpurple min-h-[600px] py-12 px-2 text-white list-none mt-8 ">
       <h2 className="text-center text-4xl font-semibold tracking-wider sm:block hidden">
         Autotalk.<span className="text-orange-400">Today</span>
       </h2>
