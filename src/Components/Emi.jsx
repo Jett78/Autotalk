@@ -1,9 +1,9 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 const Emi = () => {
   return (
    <main className='max-w-[650px] mb-6 text-gray'>
-    <h2 className="text-[24px] text-purple font-semibold border-b py-3">Emi Calculator</h2>
+   <Link to={'/Emipage'}><h2 className="text-[24px] text-purple font-semibold border-b py-3">Emi Calculator</h2></Link>
     <form action="#">
       <section className='xl:flex grid justify-between mt-2'>
          <div className='grid gap-2'>

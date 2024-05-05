@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaCircleUser } from "react-icons/fa6";
+import { Link } from 'react-router-dom';
 
 
 const TechInnovationCard = ({inovdata}) => {
@@ -7,7 +8,7 @@ const TechInnovationCard = ({inovdata}) => {
   return (
     <div className='max-w-[427px] max-h-[329px] mx-3'>
       <figure>
-        <img src={img} alt="carimages" className='max-h-[200px]' />
+      <Link to={'/ProductDescription'}>  <img src={img} alt="carimages" className='max-h-[200px]' /></Link>
       </figure>
      <section className='bg-white rounded-b-xl px-6 py-4 shadow-lg'>
      <h2 className='sm:text-[16px] text-[14px] text-gray '>{title}</h2>

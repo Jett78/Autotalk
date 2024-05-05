@@ -1,6 +1,7 @@
 import React from "react";
 import { CiSearch } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -18,7 +19,7 @@ const Navbar = () => {
           </div>
 
           <figure>
-            <img src="./auto 1.png" alt="logo" className="sm:min-w-[300px] sm:mx-20" />
+           <Link to={'/'}><img src="./auto 1.png" alt="logo" className="sm:min-w-[300px] sm:mx-20" /></Link>
           </figure>
 
           <div className="xl:flex hidden items-center gap-4 whitespace-nowrap">

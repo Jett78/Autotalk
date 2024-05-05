@@ -9,20 +9,20 @@ const Products = () => {
   return (
     <main>
         <Navbar/>
-        <div className='w-[1320px] mx-auto text-gray px-2'>
+        <div className='max-w-[1320px] mx-auto text-gray px-2'>
             <nav className='flex gap-6 border-b py-2 text-xl text-purple font-normal mt-10'>
                 <h2 className='hover:font-semibold cursor-pointer'>Tab 01</h2>
                 <h2 className='hover:font-semibold cursor-pointer'>Tab 02</h2>
             </nav>
 
-            <div className='flex flex-wrap justify-center gap-6 mt-4'>
+            <div className='flex flex-wrap items-center justify-center md:gap-6 mt-4'>
                 <section className='max-w-[315px]  p-2 border-r border-zinc-300'>
                    <Filter/>
                  </section>
 
                 <section className='max-w-[985px]  p-2'>
-                    <div className='grid justify-end gap-2'>
-                        <p>Sort by</p>
+                    <div className='grid md:justify-end justify-center gap-2'>
+                        <p className='font-normal text-sm'>Sort by</p>
                         <select name="popularity" id="popularity" className='font-normal w-[200px] border border-gray rounded-lg p-2'>
                             <option value="Popularity">Popularity</option>
                         </select>

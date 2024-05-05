@@ -3,14 +3,14 @@ import React from "react";
 const Filter = () => {
   return (
     <main>
-      <select className="md:hidden block font-normal w-[200px] border border-gray rounded-lg p-2">
+      <select className="xl:hidden block font-normal w-[200px] border border-gray rounded-lg p-2">
         <option value="Filteroptions">Filter Options</option>
       </select>
-      <div className="md:grid hidden">
+      <div className="xl:grid hidden">
         <h2 className="font-normal">Budget Type</h2>
         <input type="range" className="my-4" />
       </div>
-      <div className="md:grid hidden gap-2">
+      <div className="xl:grid hidden gap-2">
         <section className="flex gap-4">
           <div className="flex gap-2">
             <input type="text" className="w-20 border outline-none" />
