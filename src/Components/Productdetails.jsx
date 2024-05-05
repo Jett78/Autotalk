@@ -3,7 +3,7 @@ import React from 'react'
 const Productdetails = ({tesla}) => {
     const{brand,model,releasedate,engine,milage,Transmission,brakes,seat,weigth,battery,range} = tesla;
   return (
-    <main className='lg:px-0 px-4 '>
+    <main className='xl:px-0 px-4 max-w-[1320px] mx-auto '>
         <h2 className="text-[24px] text-purple font-semibold border-b py-3">Details</h2>
          {/* first row tables */}
          <div className='flex flex-wrap justify-center gap-4 text-gray'>

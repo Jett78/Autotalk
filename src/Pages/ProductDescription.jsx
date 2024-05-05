@@ -8,12 +8,15 @@ import Banks from '../Components/Banks'
 import Autoloan from '../Components/Autoloan'
 import UserReviews from '../Components/UserReviews'
 import SimilarProducts from '../Components/SimilarProducts'
+import News from '../Components/News'
+import Subscribe from '../Components/Subscribe'
+import Footer from '../Components/Footer'
 
 const ProductDescription = () => {
   return (
    <main>
     <Navbar/>
-    <div className='max-w-[1320px] h-[555px] mx-auto'>
+    <div className=''>
         <div>
         {Tesla.map((tesla,index) => (
            <div key={index}>
@@ -29,7 +32,10 @@ const ProductDescription = () => {
         <Autoloan/>
         <UserReviews/>
         <SimilarProducts/>
-    </div>
+        <News/>
+        <Subscribe/>
+        <Footer/>
+    </div>   
   
    </main>
   )

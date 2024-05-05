@@ -6,7 +6,7 @@ import { FaRegStar } from "react-icons/fa";
 
 const UserReviews = () => {
   return (
-   <main className=' text-gray px-2' >
+   <main className=' text-gray px-2 max-w-[1320px] mx-auto mt-8 ' >
      <h2 className="text-[24px] text-purple font-semibold border-b py-3">User Reviews</h2>
       <div className='flex flex-wrap gap-8 justify-center py-6 '>
       <section>

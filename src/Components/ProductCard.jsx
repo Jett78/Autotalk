@@ -47,14 +47,14 @@ const ProductCard = ({tesla}) => {
          </div>
 
         </section>
-        <div className="flex flex-wrap justify-center gap-6 my-6">
+      </div>
+      <div className="flex flex-wrap justify-center gap-6 my-6">
             <button className="commonButton">Details</button>
             <button className="commonButton">EMI Calculator</button>
             <button className="commonButton">Auto Loan</button>
             <button className="commonButton">UserReview</button>
             <button className="commonButton">News</button>
           </div>
-      </div>
     </main>
   );
 };
