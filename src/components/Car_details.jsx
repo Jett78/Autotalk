@@ -11,6 +11,9 @@ import finsta from "../assets/finsta.png"
 import ftwitter from "../assets/ftwitter.png"
 import left_arrow_2 from "../assets/left_arrow_2.png"
 import right_arrow_2 from "../assets/right_arrow_2.png"
+import Comments from "./Comments"
+import Recent_news from "./Recent_news"
+
 
 function Car_details() {
     return (
@@ -57,16 +60,18 @@ function Car_details() {
                             Also offered with the new Panamera are two new suspension systems - semi-active and fully-active. The semi-active system uses a two chamber air spring setup which reacts to undulations very fast and are aided by shock absorbers which are independently controlled for rebound and compression. The fully active suspension uses a single chamber air spring, which draws power from the hybrid system and is superior compared to the semi-active system in terms of comfort.
                         </p>
                         <div className="cate flex flex-wrap gap-5 mt-10">
-                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-100'>Corporate</button>
-                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-100'>Startup</button>
-                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-100'>Business</button>
-                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-100'>Wallet</button>
-                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-100'>Fonepay</button>
+                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-50'>Corporate</button>
+                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-50'>Startup</button>
+                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-50'>Business</button>
+                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-50'>Wallet</button>
+                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-50'>Fonepay</button>
                         </div>
                         <div className="pre_next flex justify-between mt-10">
                             <button className='py-[10px] px-[14px] text-gray-600 text-sm rounded-xl bg-gray-100 flex items-center gap-2'> <img src={left_arrow_2} alt="" /> Previous</button>
                             <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-blue-50 flex items-center gap-2'> Next Post<img src={right_arrow_2} alt="" /> </button>
                         </div>
+                        <Comments />
+
                     </div>
                     <div className="search_subs mt-10 md:col-span-4 md:mt-0">
                         <div className='grid grid-row-4 gap-10'>
@@ -93,7 +98,7 @@ function Car_details() {
                                     </label>
                                 </div>
                                 <div className="subs_btn mt-5">
-                                    <button className='bg-primary py-[14px] px-5 text-white rounded-lg'>
+                                    <button className='bg-primary py-[14px] px-5 text-white rounded-xl'>
                                         Subscribe
                                     </button>
                                 </div>
@@ -127,6 +132,7 @@ function Car_details() {
                         </div>
                     </div>
                 </section>
+                <Recent_news />
 
             </div>
         </>
