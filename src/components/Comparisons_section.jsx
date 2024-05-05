@@ -5,7 +5,6 @@ import image_52 from '../assets/image 52.png'
 import image_59 from '../assets/image 59.png'
 import image_54 from '../assets/image 54.png'
 import user from '../assets/user.png'
-import { FaCircleUser } from "react-icons/fa6";
 import { FiArrowUpRight } from "react-icons/fi";
 
 

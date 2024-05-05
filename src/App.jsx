@@ -3,6 +3,8 @@ import './App.css'
 import Most_read_section from "./components/Most_read_section"
 import Categories_section from "./components/Categories_section"
 import Comparisons_section from "./components/Comparisons_section"
+import Car_details from "./components/Car_details"
+
 function App() {
 
   return (
@@ -10,6 +12,7 @@ function App() {
       <Most_read_section />
       <Categories_section />
       <Comparisons_section />
+      <Car_details />
     </>
   )
 }
