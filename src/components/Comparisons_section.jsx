@@ -1,9 +1,6 @@
 import React from 'react'
 import image_58 from '../assets/image 58.png'
 import image_83 from '../assets/image 83.png'
-import image_52 from '../assets/image 52.png'
-import image_59 from '../assets/image 59.png'
-import image_54 from '../assets/image 54.png'
 import user from '../assets/user.png'
 import { FiArrowUpRight } from "react-icons/fi";
 import Lower_section from "./Lower_section"
