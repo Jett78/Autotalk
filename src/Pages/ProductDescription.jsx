@@ -34,7 +34,6 @@ const ProductDescription = () => {
         <SimilarProducts/>
         <News/>
         <Subscribe/>
-        <Footer/>
     </div>   
   
    </main>

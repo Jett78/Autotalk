@@ -15,10 +15,10 @@ const SimilarProducts = () => {
                             <img src={same.img} alt="carpic" />
                          </figure>
                          <section className='bg-white text-gray p-4 grid gap-2'>
-                            <h2 className='md:text-[18px]'>{same.title}</h2>
+                            <h2 className='md:text-[16px]'>{same.title}</h2>
                             <p className='text-[14px]'>{same.brand}</p>
                             <div className='flex justify-between items-center'>
-                            <h2 className='md:text-[20px] font-semibold'>Rs.{same.price} Lakhs</h2>
+                            <h2 className='md:text-[18px] font-semibold'>Rs.{same.price} Lakhs</h2>
                             <MdOutlineKeyboardArrowRight  className='text-2xl cursor-pointer'/>
                             </div>
                          </section>
