@@ -117,3 +117,54 @@ export const Tesla = [
         weigth:2250,
     },
 ]
+
+export const similarcars = [
+    {
+        img:"./cars/image 65.png",
+        title:"Kia Sonnet",
+        brand:"Brand name",
+        price:13.25,
+    },
+    {
+        img:"./cars/image 64.png",
+        title:"Porsche Panamera",
+        brand:"Brand name",
+        price:10.25,
+    },
+    {
+        img:"./cars/image 63.png",
+        title:"Scorpio",
+        brand:"Brand name",
+        price:25.25,
+    },
+    {
+        img:"./cars/image 59.png",
+        title:"Ferrari SF90",
+        brand:"Brand name",
+        price:9.25,
+    },
+    {
+        img:"./cars/image 54.png",
+        title:"New Kia Sonnet",
+        brand:"Brand name",
+        price:23.25,
+    },
+    {
+        img:"./cars/image 52.png",
+        title:"2023 Porsche Panamera",
+        brand:"Brand name",
+        price:35,
+    },
+    {
+        img:"./cars/image 59.png",
+        title:"Ferrari SF90",
+        brand:"Brand name",
+        price:50.37,
+    },
+    {
+        img:"./cars/image 63.png",
+        title:"Scorpio",
+        brand:"Brand name",
+        price:69.33,
+    },
+]

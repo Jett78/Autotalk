@@ -7,6 +7,7 @@ import Emi from '../Components/Emi'
 import Banks from '../Components/Banks'
 import Autoloan from '../Components/Autoloan'
 import UserReviews from '../Components/UserReviews'
+import SimilarProducts from '../Components/SimilarProducts'
 
 const ProductDescription = () => {
   return (
@@ -27,7 +28,9 @@ const ProductDescription = () => {
         </div>
         <Autoloan/>
         <UserReviews/>
+        <SimilarProducts/>
     </div>
+  
    </main>
   )
 }
