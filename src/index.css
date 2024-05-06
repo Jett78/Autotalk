@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#root {
-  max-width: 1387px;
-  margin: 0 auto;
-  text-align: left;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
 
-}
 
 .no-scrollbar::-webkit-scrollbar {
   display: none;

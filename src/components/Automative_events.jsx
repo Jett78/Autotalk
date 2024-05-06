@@ -58,8 +58,8 @@ function Automative_events() {
 
     return (
         <>
-            <div className=''>
-                <section className="comparison_section mt-24 grid grid-cols-1 gap-y-5 xl:grid-cols-6 xl:gap-10">
+            <main className='bg-green-100 w-full px-5 xl:m-[0_0_0_-17.4rem] flex flex-row xl:p-[100px_0_100px_0] xl:w-[1920px] box-sizing-border'>
+                <section className="comparison_section grid grid-cols-1 gap-y-5 xl:mx-[300px]  xl:grid-cols-6 xl:gap-10 ">
                     <div className="left_section md:col-span-4">
                         <div className="container flex justify-between">
                             <div className="title">
@@ -71,13 +71,13 @@ function Automative_events() {
                                 <FiArrowUpRight className='text-slate-600 w-6 h-6' />
                             </div>
                         </div>
-                        <hr className='my-3' />
+                        <hr className='my-3  border-gray-300' />
 
                         <div className="lower-section mt-5 md:mt-10">
                             <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-5 ">
                                 {displayItems.map((item, index) => {
                                     return (
-                                        <div key={index} className="sm:border border-slate-200 rounded-xl sm:mt-0 md:w-[427px]">
+                                        <div key={index} className="bg-slate-50 sm:border border-slate-200 rounded-xl sm:mt-0 md:w-[427px]">
                                             <div className="md:shrink-0">
                                                 <img className="h-full w-full object-contain md:h-full  md:w-full" src={item.img} alt="" />
                                             </div>
@@ -101,7 +101,7 @@ function Automative_events() {
                     </div>
                     <div className="right_section mt-10 md:col-span-2 md:mt-0">
                         <div className='grid grid-row-3 gap-10'>
-                            <div className="subs w-full border border-slate-200 rounded-lg p-5">
+                            <div className="subs w-full border border-slate-200 rounded-lg p-5 bg-white">
                                 <p className='text-primary text-xl font-medium mb-2 md:text-l'>Subscribe to our Newsletter</p>
                                 <p className='text-slate-500'>Stay up to date with the latest news via email. We hate spam!</p>
                                 <div className="email my-5">
@@ -122,27 +122,27 @@ function Automative_events() {
                             </div>
                             <div className="disc">
                                 <p className='text-primary text-xl font-medium mb-2 md:text-l'>Discover More</p>
-                                <div className="flex flex-wrap gap-5 my-5">
-                                    <button className='py-[10px] px-[14px] text-gray-600 rounded-lg border border-gray-300'>4 Wheeler</button>
-                                    <button className='py-[10px] px-[14px] text-gray-600 rounded-lg border border-gray-300'>4 Wheeler</button>
-                                    <button className='py-[10px] px-[14px] text-gray-600 rounded-lg border border-gray-300'>Bikes</button>
-                                    <button className='py-[10px] px-[14px] text-gray-600 rounded-lg border border-gray-300'>Scooters</button>
-                                    <button className='py-[10px] px-[14px] text-gray-600 rounded-lg border border-gray-300'>Comparisons</button>
-                                    <button className='py-[10px] px-[14px] text-gray-600 rounded-lg border border-gray-300'>Scooters</button>
+                                <div className="flex flex-wrap gap-5 mt-5">
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>4 Wheeler</button>
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>4 Wheeler</button>
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>Bikes</button>
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>Scooters</button>
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>Comparisons</button>
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>Scooters</button>
                                 </div>
                             </div>
                             <div className="touch">
                                 <p className='text-primary text-xl font-medium mb-5 md:text-l'>Get in Touch</p>
                                 <div className='flex flex-wrap gap-y-5'>
-                                    <button className='text-primary py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-primary bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
                                         <img src={ffb} alt="" />
                                         <span className='absolute pl-8'>Facebook</span>
                                     </button>
-                                    <button className='text-primary py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-primary bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
                                         <img src={finsta} alt="" />
                                         <span className='absolute pl-8'>LinkedIn</span>
                                     </button>
-                                    <button className='text-primary py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-primary bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
                                         <img src={ftwitter} alt="" />
                                         <span className='absolute pl-8'>Twitter</span>
                                     </button>
@@ -151,7 +151,7 @@ function Automative_events() {
                         </div>
                     </div>
                 </section>
-            </div>
+            </main>
         </>
     )
 }
