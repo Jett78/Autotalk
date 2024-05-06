@@ -2,11 +2,14 @@ import React, { useState, useEffect } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import TechInnovationCard from "./TechInnovationCard";
 import { innovation } from "../db/Data";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const TechInnovation = () => {
   const [displayItems, setDisplayItems] = useState([]);
 
   useEffect(() => {
+    AOS.init(); // Initialize AOS
     const handleResize = () => {
       const newSize = window.innerWidth < 768 ? innovation.slice(0, 2) : innovation;
       setDisplayItems(newSize);
@@ -18,9 +21,9 @@ const TechInnovation = () => {
 
     return () => window.removeEventListener("resize", handleResize); 
   }, []); 
-
+  
   return (
-    <main className="min-h-[600px] bg-primary pb-8 px-4 my-10">
+    <main className="min-h-[600px] bg-primary pb-8 px-4 my-10" data-aos="fade-right" data-aos-anchor-placement="top-center">
       <header className="flex justify-between max-w-[1320px] mx-auto md:pt-[100px] pt-10 border-b border-gray">
         <div>
           <h2 className="sm:text-[24px] text-[20px] font-semibold text-purple tracking-wide">Tech and Innovation</h2>

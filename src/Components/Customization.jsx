@@ -2,11 +2,15 @@ import React, { useState, useEffect } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import TechInnovationCard from "./TechInnovationCard";
 import {innovation} from "../db/Data"
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 
 const Customization = () => {
+ 
   const [displayItems, setDisplayItems] = useState([]);
 
   useEffect(() => {
+    AOS.init();
     const handleResize = () => {
       const newSize = window.innerWidth < 768 ? innovation.slice(0, 2) : innovation;
       setDisplayItems(newSize);
@@ -19,7 +23,7 @@ const Customization = () => {
     return () => window.removeEventListener("resize", handleResize); 
   }, []); 
   return (
-    <main className="min-h-[600px] px-4 pt-8">
+    <main className="min-h-[600px] px-4 pt-8" data-aos="fade-right">
       <header className="flex justify-between max-w-[1320px] mx-auto border-b border-gray">
         <div>
           <h2 className="sm:text-[24px] text-[20px] font-semibold text-purple tracking-wide">Customization and Modifications</h2>

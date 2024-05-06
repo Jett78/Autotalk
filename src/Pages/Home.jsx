@@ -21,7 +21,6 @@ const Home = () => {
     <Vintage/>
     <Customization/>
     <Automotive/>
-    <Footer/>
   </main>
   )
 }
