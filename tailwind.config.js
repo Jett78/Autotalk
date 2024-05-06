@@ -8,6 +8,7 @@ export default {
       colors: {
         primary: "#3A5993",
         secondary: "#F2F7FC",
+        menu_blue: "#3C4DA0"
       },
       screens: {
         'sm': '520px',

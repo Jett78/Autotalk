@@ -1,17 +1,8 @@
-/* #root {
+#root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-} */
-
-#root {
-  max-width: 1387px;
-  margin: 0 auto;
-  text-align: left;
-  font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
-
 }
 
 .logo {
