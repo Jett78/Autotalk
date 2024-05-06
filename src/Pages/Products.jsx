@@ -3,19 +3,20 @@ import Navbar from '../Components/Navbar'
 import Filter from '../Components/Filter'
 import { similarcars } from '../db/Data'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-
+import News from '../Components/News';
+import Subscribe from '../Components/Subscribe';
 
 const Products = () => {
   return (
     <main>
         <Navbar/>
-        <div className='max-w-[1320px] mx-auto text-gray px-2'>
-            <nav className='flex gap-6 border-b py-2 text-xl text-purple font-normal mt-10'>
+        <div className=' text-gray px-2'>
+            <nav className='max-w-[1320px] mx-auto flex gap-6 border-b py-2 text-xl text-purple font-normal mt-10'>
                 <h2 className='hover:font-semibold cursor-pointer'>Tab 01</h2>
                 <h2 className='hover:font-semibold cursor-pointer'>Tab 02</h2>
             </nav>
 
-            <div className='flex flex-wrap items-center justify-center md:gap-6 mt-4'>
+            <div className='flex flex-wrap items-center justify-center md:gap-6 my-4'>
                 <section className='max-w-[315px]  p-2 border-r border-zinc-300'>
                    <Filter/>
                  </section>
@@ -47,6 +48,8 @@ const Products = () => {
                     </div>
                 </section>
             </div>
+            <News/> 
+            <Subscribe/>
         </div>
     </main>
   )

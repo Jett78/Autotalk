@@ -12,9 +12,9 @@ const Subscribe = () => {
       <div className="flex md:justify-between justify-center items-center md:text-[16px] text-[12px] mt-6">
         <img src="./cars/blackcar.png" alt="car" className="md:w-[270px] w-40 hidden sm:block  transform scale-x-[-1]"/>
         <form action="#">
-           <div className="bg-white md:w-[441px] w-[300px] h-[55px] flex items-center justify-between px-4 rounded-xl">
-            <input type="text" placeholder="Enter your email address" className="font-light outline-none border-none text-black"/>
-            <button className="bg-red-600 md:w-[112px] w-[92px] md:h-[43px] h-[35px] rounded-xl text-white">Subscribe</button>
+           <div className="bg-white md:w-[441px] w-[280px] h-[55px] flex items-center justify-between px-4 rounded-xl">
+            <input type="text" placeholder="Enter your email address" className="w-full font-light outline-none border-none text-black"/>
+            <button className="bg-red-600 md:w-[112px] w-[110px] md:h-[43px] h-[35px] rounded-xl text-white">Subscribe</button>
            </div>
         </form>
         <img src="./cars/redcar.png" alt="car" className="md:w-[270px] lg:block hidden  " />

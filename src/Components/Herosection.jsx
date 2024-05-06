@@ -3,10 +3,11 @@ import Navbar from "./Navbar";
 
 const Herosection = () => {
   return (
-    <main className="bg-primary max-h-[700px] w-full ">
+    <main className="bg-primary max-h-[750px] w-full ">
       <div>
         <Navbar />
-        <h2 className="font-semibold md:text-[42px] px-4 text-xl  text-purple text-center mx-auto max-w-[1096px] md:pt-16 pt-0 tracking-wide leading-[145%]">
+       <div className="md:py-16 py-6">
+       <h2 className="font-semibold sm:text-[42px] px-4 text-xl  text-purple text-center mx-auto max-w-[1096px] tracking-wide leading-[145%]">
           Get Latest updates on what's going on AutoEcosystem in Nepal
         </h2>
         <p className="py-4 px-1 sm:text-[16px] text-[14px] text-gray text-center mx-auto max-w-[1096px]  tracking-wide font-normal">
@@ -18,6 +19,7 @@ const Herosection = () => {
         <figure>
           <img src="./div.png" alt="herosection" className="mx-auto" />
         </figure>
+       </div>
       </div>
     </main>
   );
