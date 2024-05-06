@@ -15,7 +15,6 @@ import Footer from '../Components/Footer'
 const ProductDescription = () => {
   return (
    <main>
-    <Navbar/>
     <div className=''>
         <div>
         {Tesla.map((tesla,index) => (

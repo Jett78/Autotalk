@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'
 import Filter from '../Components/Filter'
 import { similarcars } from '../db/Data'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
@@ -9,8 +8,7 @@ import Subscribe from '../Components/Subscribe';
 const Products = () => {
   return (
     <main>
-        <Navbar/>
-        <div className=' text-gray px-2'>
+        <div className=' text-gray px-2 mt-[8em] '>
             <nav className='max-w-[1320px] mx-auto flex gap-6 border-b py-2 text-xl text-purple font-normal mt-10'>
                 <h2 className='hover:font-semibold cursor-pointer'>Tab 01</h2>
                 <h2 className='hover:font-semibold cursor-pointer'>Tab 02</h2>

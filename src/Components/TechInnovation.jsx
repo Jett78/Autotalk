@@ -23,7 +23,7 @@ const TechInnovation = () => {
   }, []); 
   
   return (
-    <main className="min-h-[600px] bg-primary pb-8 px-4 my-10" >
+    <main className="min-h-[600px]  bg-primary pb-8 px-4 my-10" >
       <header className="flex justify-between max-w-[1320px] mx-auto md:pt-[100px] pt-10 border-b border-gray" data-aos="fade-right" data-aos-anchor-placement="top-center">
         <div>
           <h2 className="sm:text-[24px] text-[20px] font-semibold text-purple tracking-wide">Tech and Innovation</h2>

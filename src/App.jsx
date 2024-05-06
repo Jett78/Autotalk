@@ -6,12 +6,14 @@ import ProductDescription from './Pages/ProductDescription'
 import Emipage from './Pages/Emipage'
 import Products from './Pages/Products'
 import Header from './Components/Header'
+import Navbar from './Components/Navbar'
 
 const App = () => {
   return (
     <main>
   <Header/>
      <BrowserRouter>
+     <Navbar/>
        <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/Products" element={<Products/>}></Route>
