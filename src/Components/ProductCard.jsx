@@ -7,7 +7,7 @@ const ProductCard = ({tesla}) => {
 
   return (
     <main>
-      <div className="mt-[8em] flex flex-wrap justify-center gap-4">
+      <div className="mt-[4em] pt-20 flex flex-wrap justify-center gap-4">
         <section>
           <figure>
             <img src={img} alt="car" className="sm:w-[426px] w-[270px]  sm:h-[333px] h-[80] object-cover"/>

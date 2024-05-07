@@ -8,18 +8,18 @@ import Subscribe from '../Components/Subscribe';
 const Products = () => {
   return (
     <main>
-        <div className=' text-gray px-2 mt-[8em] '>
+        <div className=' text-gray px-2  mt-[4em] sm:pt-10 pt-6 '>
             <nav className='max-w-[1320px] mx-auto flex gap-6 border-b py-2 text-xl text-purple font-normal mt-10'>
                 <h2 className='hover:font-semibold cursor-pointer'>Tab 01</h2>
                 <h2 className='hover:font-semibold cursor-pointer'>Tab 02</h2>
             </nav>
 
-            <div className='flex flex-wrap items-center justify-center md:gap-6 my-4'>
-                <section className='max-w-[315px]  p-2 border-r border-zinc-300'>
+            <div className='sm:flex grid-cols-1 justify-center md:gap-6 my-4'>
+                <section className='max-w-[315px]  p-2 md:border-r border-b grid justify-center border-zinc-300'>
                    <Filter/>
                  </section>
 
-                <section className='max-w-[985px]  p-2'>
+                <section className='max-w-[985px] p-2 grid justify-center'>
                     <div className='grid md:justify-end justify-center gap-2'>
                         <p className='font-normal text-sm'>Sort by</p>
                         <select name="popularity" id="popularity" className='font-normal w-[200px] border border-gray rounded-lg p-2'>
@@ -27,7 +27,7 @@ const Products = () => {
                         </select>
                     </div>
 
-                    <div className='flex flex-wrap md:justify-start justify-center gap-4 gap-y-8 my-8 '>
+                    <div className='grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 justify-center gap-2 gap-y-8 my-8 '>
                     {similarcars.map((same,index) => (
                     <div key={index} same={same} className='max-w-[300px] border border-zinc-300 shadow-sm'>
                          <figure>
