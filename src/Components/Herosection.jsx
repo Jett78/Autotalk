@@ -1,10 +1,10 @@
 import React from "react";
-import Navbar from "./Navbar";
+
 
 const Herosection = () => {
   return (
     <main className="bg-primary max-h-[750px] w-full mt-16 ">
-       <div className="md:py-16 py-6">
+       <div className="md:py-16 py-10">
        <h2 className="font-semibold sm:text-[42px] px-4 text-xl  text-purple text-center mx-auto max-w-[1096px] tracking-wide leading-[145%]">
           Get Latest updates on what's going on AutoEcosystem in Nepal
         </h2>
