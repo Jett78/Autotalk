@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <>
-      <main className={`fixed w-full bg-zinc-200 shadow-sm z-50 ${ isScrolled ? "mt-[-70px]" : "mt-[0px]"}`} >
+      <main className={`fixed w-full bg-zinc-200 shadow-sm z-50 ${ isScrolled ? "mt-[-65px]" : "mt-[0px]"}`} >
         <nav className="flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal">
           <div className="lg:flex hidden gap-8">
             <select
