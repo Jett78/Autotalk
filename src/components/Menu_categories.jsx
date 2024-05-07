@@ -16,7 +16,7 @@ import { useEffect } from 'react'
 
 
 
-function Menu_categories() {
+function Menu_categories({ open, setopen }) {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
 
     useEffect(() => {
@@ -33,7 +33,7 @@ function Menu_categories() {
 
     return (
         <>
-            <div className="menu-category bg-menu_blue w-full mt-20 xl:m-[40px_0_0_-19.4rem] flex flex-row xl:p-[40px_0_40px_0] xl:w-[1920px] box-sizing-border">
+            <div className={`menu-category bg-menu_blue w-full xl:m-[0_0_0_-19.4rem] flex flex-row xl:p-[40px_0_40px_0] xl:w-[1920px] box-sizing-border ${open ? 'block mt-0' : 'hidden'}`}>
                 <div className="container mx-0 xl:mx-[300px] ">
                     <div className="header flex justify-between items-center bg-white pl-0 pr-5 lg:bg-menu_blue lg:px-5">
                         <div className="logo">
@@ -45,7 +45,7 @@ function Menu_categories() {
                                     isSmallScreen ? <img src={bsearch} alt="" /> : <img src={search} alt="" />
                                 }
                             </div>
-                            <div className="menu-cross">
+                            <div className="menu-cross" onClick={() => setopen(!open)}>
                                 {
                                     isSmallScreen ? <img src={bcross} alt="" /> : <img src={cross} alt="" />
                                 }

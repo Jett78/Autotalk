@@ -11,6 +11,14 @@
 
 }
 
+img {
+  cursor: pointer;
+}
+
+p {
+  cursor: pointer;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
