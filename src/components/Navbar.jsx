@@ -3,6 +3,8 @@ import { CiSearch } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
 import Menu_categories from "./Menu_categories"
+import auto from "../assets/auto 1.png"
+
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -28,8 +30,8 @@ const Navbar = () => {
 
     return (
         <>
-            <main className={`fixed w-full bg-navbar shadow-sm z-50 ${isScrolled ? "mt-[-65px]" : "mt-[0px]"} `} >
-                <nav className={`flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal md:border-b border-b-none ${open ? 'hidden' : 'block'}`}>
+            <main className={`fixed w-full bg-sky-100 shadow-sm z-50 ml-[-32px] xl:ml-[-17.8rem] ${isScrolled ? "mt-[-65px]" : "mt-[0px]"} `} >
+                <nav className={`flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal md:border-b border-b-none ${isScrolled ? "mt-[20px]" : "mt-[0px]"} ${open ? 'hidden' : 'block'}`}>
                     <div className="lg:flex hidden gap-8">
                         <select
                             name="NewAuto"
@@ -50,15 +52,15 @@ const Navbar = () => {
                     </div>
 
                     <figure>
-                        <Link to={"/"}>
-                            <img src="./auto 1.png" alt="logo" className="sm:w-[300px]" />
-                        </Link>
+
+                        <img src={auto} alt="logo" className="sm:w-[300px] xl:mx-20" />
+
                     </figure>
 
                     <div className="xl:flex hidden items-center gap-4 whitespace-nowrap">
-                        <Link to="/products">
-                            <p className="">Car Buying Goods</p>
-                        </Link>
+
+                        <p className="">Car Buying Goods</p>
+
                         <select
                             name="Motorsports"
                             id="MotorSports"
@@ -66,9 +68,9 @@ const Navbar = () => {
                         >
                             <option value="Motorsports">Motorsports</option>
                         </select>
-                        <Link to="/Emipage">
-                            <p className="cursor-pointer">EMI Calculator</p>
-                        </Link>
+
+                        <p className="cursor-pointer">EMI Calculator</p>
+
                     </div>
                     <div className="ml-4 flex items-center gap-4 text-2xl cursor-pointer">
                         <CiSearch />
