@@ -1,3 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+  }
+
+  .commonButton {
+    width: 200px;
+    height: 51px;
+    background-color: #A7CDE9; 
+    border-radius: 25px; 
+    font-size: 16px;
+    font-weight: normal;
+    color: #3C4DA0;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .commonButton:hover {
+    background-color: #4169e1; 
+    color: #fff; 
+  }
+  @media (max-width: 768px) {
+    .commonButton {
+        width: 120px; 
+        height: 40px;
+        font-size: 12px;
+    }
+}
+  .tableborder{
+    border: 1px solid rgb(185, 185, 185);
+  }
+
