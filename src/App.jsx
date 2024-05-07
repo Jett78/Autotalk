@@ -11,7 +11,7 @@ import Navbar from './Components/Navbar'
 const App = () => {
   return (
     <main>
-  <Header/>
+    <Header/>
      <BrowserRouter>
      <Navbar/>
        <Routes>
