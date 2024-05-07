@@ -1,4 +1,4 @@
-import React from 'react'
+import {useState,useEffect} from 'react'
 import Filter from '../Components/Filter'
 import { similarcars } from '../db/Data'
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
@@ -6,6 +6,22 @@ import News from '../Components/News';
 import Subscribe from '../Components/Subscribe';
 
 const Products = () => {
+    const [displayItems, setDisplayItems] = useState([]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const newSize = window.innerWidth < 1000 ? similarcars.slice(0, 4) : similarcars;
+      setDisplayItems(newSize);
+    };
+
+    handleResize(); 
+
+    window.addEventListener("resize", handleResize); 
+
+    return () => window.removeEventListener("resize", handleResize); 
+  }, []); 
+
+
   return (
     <main>
         <div className=' text-gray px-2  mt-[4em] sm:pt-10 pt-6 '>
@@ -22,13 +38,13 @@ const Products = () => {
                 <section className='max-w-[985px] p-2 grid justify-center'>
                     <div className='grid md:justify-end justify-center gap-2'>
                         <p className='font-normal text-sm'>Sort by</p>
-                        <select name="popularity" id="popularity" className='font-normal w-[200px] border border-gray rounded-lg p-2'>
+                        <select name="popularity" id="popularity" className='font-normal w-[200px] border border-gray rounded-lg h-10'>
                             <option value="Popularity">Popularity</option>
                         </select>
                     </div>
 
                     <div className='grid xl:grid-cols-3 lg:grid-cols-2 grid-cols-1 justify-center gap-2 gap-y-8 my-8 '>
-                    {similarcars.map((same,index) => (
+                    {displayItems.map((same,index) => (
                     <div key={index} same={same} className='max-w-[300px] border border-zinc-300 shadow-sm'>
                          <figure>
                             <img src={same.img} alt="carpic" />
