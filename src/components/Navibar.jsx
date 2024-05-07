@@ -6,7 +6,7 @@ import Menu_categories from "./Menu_categories"
 import auto from "../assets/auto 1.png"
 
 
-const Navbar = () => {
+const Navibar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [open, setopen] = useState(false)
 
@@ -83,4 +83,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Navibar;
