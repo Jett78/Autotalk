@@ -8,11 +8,11 @@ import Lower_section from "./Lower_section"
 function Comparisons_section() {
     return (
         <>
-            <div>
-                <section className="comparison_section mt-24">
+            <div className='mx-5'>
+                <section className="comparison_section mt-24 mx-auto max-w-[1320px]">
                     <div className="container flex justify-between">
                         <div className="title">
-                            <p className='text-primary text-xl font-medium mb-2 md:text-3xl'>Comparisons</p>
+                            <p className='text-purple text-xl font-medium mb-2 md:text-3xl'>Comparisons</p>
                             <p className='text-slate-500'>See what happening new in auto</p>
                         </div>
                         <div className="md:flex hidden items-center gap-2 ">

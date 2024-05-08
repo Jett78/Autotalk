@@ -1,3 +1,6 @@
+
+/** @type {import('tailwindcss').Config} */
+
 export default {
   content: [
     "./index.html",
@@ -9,7 +12,35 @@ export default {
         primary: "#3A5993",
         secondary: "#F2F7FC",
         menu_blue: "#3C4DA0",
-        navbar: "#A7CDE9"
+        navbar: "#A7CDE9",
+        gray: "#686163",
+        purple: "#3C4DA0",
+        darkpurple: "#334B75",
+        lightgreen: "#F0FDF5",
+        primary: "#A7CDE9",
+        lightyellow: "#FFFCEA",
+      },
+      keyframes: {
+        slideleft: {
+          from: {
+            opacity: "0",
+            transform: "translateX(-100px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
+        slideright: {
+          from: {
+            opacity: "0",
+            transform: "translateX(100px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateX(0)",
+          },
+        },
       },
       screens: {
         'sm': '520px',
@@ -35,7 +66,11 @@ export default {
       fontFamily: {
         'sans': ['ui-sans-serif', 'system-ui'],
         'playfair': ["Playfair Display", 'serif']
-      }
+      },
+      animation: {
+        slideright: "slideright 2s ease-in-out 800ms ",
+        slideleft: "slideleft 2s ease-in-out 800ms ",
+      },
     },
     plugins: [
     ],

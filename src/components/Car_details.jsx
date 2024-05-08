@@ -18,8 +18,8 @@ import Recent_news from "./Recent_news"
 function Car_details() {
     return (
         <>
-            <div>
-                <section className='details mt-24'>
+            <div className='mx-auto max-w-[1320px] p-10 md:pt-24'>
+                <section className='details mt-24 '>
                     <div className="banner">
                         <img src={container} alt="" />
                     </div>
@@ -40,7 +40,7 @@ function Car_details() {
                     </div>
                     <div className="info md:col-span-9">
                         <p className="">
-                            <span className='text-primary font-semibold h-0 md:text-[36px] inline-block'>P</span>orsche has launched the new third-gen Panamera sedan in India, just a day after the global unveil of the new car. The price range for the new Panamera starts at Rs 1.68 crore (ex-showroom). However, the brand has only listed the standard Panamera on its India website which comes with a V6 engine powering only the rear wheels.
+                            <span className='text-purple font-semibold h-0 md:text-[36px] inline-block'>P</span>orsche has launched the new third-gen Panamera sedan in India, just a day after the global unveil of the new car. The price range for the new Panamera starts at Rs 1.68 crore (ex-showroom). However, the brand has only listed the standard Panamera on its India website which comes with a V6 engine powering only the rear wheels.
                             Still immediately recognizable as a Panamera, the low-slung profile continues with this one. The front now comes withnew headlamps with new LED signature lighting. The long bonnet comes with two raised lines, to channel air. The central air intake is quite bigger and extends from the lower bumper to almost the lip. These new changes give the 2023 Porsche Panamera a refreshed and new look, helpful to differentiate it from the older car.
 
                             The 2023 Porsche Panamera comes with a heavily modernised cabin, with elements lifted from the new Cayenne and Taycan. The instrument panel is a 12.6-inch unit from the Cayenne, while the 12.3-inch infotainment display is from the Taycan. A third 10.9-inch display can be opted for, for the co-driver to check data or use media.
@@ -60,15 +60,15 @@ function Car_details() {
                             Also offered with the new Panamera are two new suspension systems - semi-active and fully-active. The semi-active system uses a two chamber air spring setup which reacts to undulations very fast and are aided by shock absorbers which are independently controlled for rebound and compression. The fully active suspension uses a single chamber air spring, which draws power from the hybrid system and is superior compared to the semi-active system in terms of comfort.
                         </p>
                         <div className="cate flex flex-wrap gap-5 mt-10">
-                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-50'>Corporate</button>
-                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-50'>Startup</button>
-                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-50'>Business</button>
-                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-50'>Wallet</button>
-                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-green-50'>Fonepay</button>
+                            <button className='py-[10px] px-[14px] text-purple text-sm rounded-xl bg-green-50'>Corporate</button>
+                            <button className='py-[10px] px-[14px] text-purple text-sm rounded-xl bg-green-50'>Startup</button>
+                            <button className='py-[10px] px-[14px] text-purple text-sm rounded-xl bg-green-50'>Business</button>
+                            <button className='py-[10px] px-[14px] text-purple text-sm rounded-xl bg-green-50'>Wallet</button>
+                            <button className='py-[10px] px-[14px] text-purple text-sm rounded-xl bg-green-50'>Fonepay</button>
                         </div>
                         <div className="pre_next flex justify-between mt-10">
-                            <button className='py-[10px] px-[14px] text-gray-600 text-sm rounded-xl bg-gray-100 flex items-center gap-2'> <img src={left_arrow_2} alt="" /> Previous</button>
-                            <button className='py-[10px] px-[14px] text-primary text-sm rounded-xl bg-blue-50 flex items-center gap-2'> Next Post<img src={right_arrow_2} alt="" /> </button>
+                            <button className='py-[10px] px-[14px] text-zinc-600 text-sm rounded-xl bg-zinc-100 flex items-center gap-2'> <img src={left_arrow_2} alt="" /> Previous</button>
+                            <button className='py-[10px] px-[14px] text-purple text-sm rounded-xl bg-blue-50 flex items-center gap-2'> Next Post<img src={right_arrow_2} alt="" /> </button>
                         </div>
                         <Comments />
 
@@ -76,54 +76,54 @@ function Car_details() {
                     <div className="search_subs mt-10 md:col-span-4 md:mt-0">
                         <div className='grid grid-row-4 gap-10'>
                             <div className="search w-full md:h-[120px] border border-slate-200 rounded-lg p-5 pb-10">
-                                <p className='text-primary text-xl font-medium mb-2 md:text-l'>Search</p>
+                                <p className='text-purple text-xl font-medium mb-2 md:text-l'>Search</p>
                                 <form action="#">
-                                    <div className="bg-gray-100 h-[44px] flex items-center justify-between px-4 rounded-xl">
-                                        <input type="text" placeholder="Search..." className="font-light outline-none border-none bg-gray-100 rounded-lg" />
+                                    <div className="bg-zinc-100 h-[44px] flex items-center justify-between px-4 rounded-xl">
+                                        <input type="text" placeholder="Search..." className="font-light outline-none border-none bg-zinc-100 rounded-lg" />
                                         <button className=" "><img src={search} alt="" /></button>
                                     </div>
                                 </form>
                             </div>
                             <div className="subs w-full border border-slate-200 rounded-lg p-5">
-                                <p className='text-primary text-xl font-medium mb-2 md:text-l'>Subscribe to our Newsletter</p>
+                                <p className='text-purple text-xl font-medium mb-2 md:text-l'>Subscribe to our Newsletter</p>
                                 <p className='text-slate-500'>Stay up to date with the latest news via email. We hate spam!</p>
                                 <div className="email my-5">
-                                    <label htmlFor="" className='text-gray-600 font-medium'>Email</label>
-                                    <input type="email" className='rounded-md p-4 bg-gray-100 w-full h-[49px] mt-[6px]' />
+                                    <label htmlFor="" className='text-zinc-600 font-medium'>Email</label>
+                                    <input type="email" className='rounded-md p-4 bg-zinc-100 w-full h-[49px] mt-[6px]' />
                                 </div>
                                 <div className="chk flex ">
                                     <label htmlFor="" className=''>
-                                        <input type="checkbox" className='mr-[6px] w-6 h-6 bg-gray-500' />
-                                        <span className='absolute text-gray-600'>I have read and agree to the terms.</span>
+                                        <input type="checkbox" className='mr-[6px] w-6 h-6 bg-zinc-500' />
+                                        <span className='absolute text-zinc-600'>I have read and agree to the terms.</span>
                                     </label>
                                 </div>
                                 <div className="subs_btn mt-5">
-                                    <button className='bg-primary py-[14px] px-5 text-white rounded-xl'>
+                                    <button className='bg-purple py-[14px] px-5 text-white rounded-xl'>
                                         Subscribe
                                     </button>
                                 </div>
                             </div>
                             <div className="disc">
-                                <p className='text-primary text-xl font-medium mb-2 md:text-l'>Discover More</p>
+                                <p className='text-purple text-xl font-medium mb-2 md:text-l'>Discover More</p>
                                 <div className="flex flex-wrap gap-5 my-5 w-[260px]">
-                                    <button className='py-[10px] px-[14px] text-gray-600 rounded-lg border border-gray-300'>4 Wheeler</button>
-                                    <button className='py-[10px] px-[14px] text-gray-600 rounded-lg border border-gray-300'>Bikes</button>
-                                    <button className='py-[10px] px-[14px] text-gray-600 rounded-lg border border-gray-300'>Scooters</button>
-                                    <button className='py-[10px] px-[14px] text-gray-600 rounded-lg border border-gray-300'>Comparisons</button>
+                                    <button className='py-[10px] px-[14px] text-zinc-600 rounded-lg border border-zinc-300'>4 Wheeler</button>
+                                    <button className='py-[10px] px-[14px] text-zinc-600 rounded-lg border border-zinc-300'>Bikes</button>
+                                    <button className='py-[10px] px-[14px] text-zinc-600 rounded-lg border border-zinc-300'>Scooters</button>
+                                    <button className='py-[10px] px-[14px] text-zinc-600 rounded-lg border border-zinc-300'>Comparisons</button>
                                 </div>
                             </div>
                             <div className="touch">
-                                <p className='text-primary text-xl font-medium mb-5 md:text-l'>Get in Touch</p>
+                                <p className='text-purple text-xl font-medium mb-5 md:text-l'>Get in Touch</p>
                                 <div className='flex flex-wrap gap-y-5'>
-                                    <button className='text-primary py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-purple py-[10px] px-[14px] rounded-lg border border-zinc-300 w-full text-left flex items-center'>
                                         <img src={ffb} alt="" />
                                         <span className='absolute pl-8'>Facebook</span>
                                     </button>
-                                    <button className='text-primary py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-purple py-[10px] px-[14px] rounded-lg border border-zinc-300 w-full text-left flex items-center'>
                                         <img src={finsta} alt="" />
                                         <span className='absolute pl-8'>LinkedIn</span>
                                     </button>
-                                    <button className='text-primary py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-purple py-[10px] px-[14px] rounded-lg border border-zinc-300 w-full text-left flex items-center'>
                                         <img src={ftwitter} alt="" />
                                         <span className='absolute pl-8'>Twitter</span>
                                     </button>

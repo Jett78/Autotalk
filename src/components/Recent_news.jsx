@@ -6,10 +6,10 @@ function Recent_news() {
     return (
         <>
             <div>
-                <section className="recent mt-20">
+                <section className="recent mt-20 mx-auto max-w-[1320px]">
                     <div className="container flex justify-between">
                         <div className="title">
-                            <p className='text-primary text-xl font-medium font-playfair mb-2 md:text-3xl'>Recent News</p>
+                            <p className='text-purple text-xl font-medium font-playfair mb-2 md:text-3xl'>Recent News</p>
                             <p className='text-slate-500'>See what happening new in auto</p>
                         </div>
                         <div className="md:flex hidden items-center gap-2 ">

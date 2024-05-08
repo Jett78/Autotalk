@@ -58,16 +58,16 @@ function Automative_events() {
 
     return (
         <>
-            <main className='bg-green-100 w-full px-5 mt-20 xl:m-[100px_0_0_-19.4rem] flex flex-row xl:p-[100px_0_100px_0] xl:w-[1920px] box-sizing-border'>
-                <section className="comparison_section grid grid-cols-1 gap-y-5 xl:mx-[300px]  xl:grid-cols-6 xl:gap-10 ">
+            <main className='bg-green-100 w-full px-5 mt-20 flex flex-row py-10 xl:p-[100px_0_100px_0] xl:w-[1920px] box-sizing-border'>
+                <section className="comparison_section grid grid-cols-1 gap-y-5 mx-auto xl:mx-[300px]  xl:grid-cols-6 xl:gap-10 ">
                     <div className="left_section md:col-span-4">
                         <div className="container flex justify-between">
                             <div className="title">
-                                <p className='text-primary text-xl font-medium mb-2 md:text-3xl'>Automotive Events</p>
+                                <p className='text-purple text-xl font-medium mb-2 md:text-3xl'>Automotive Events</p>
                                 <p className='text-slate-500'>See what happening new in auto</p>
                             </div>
                             <div className="md:flex hidden items-center gap-2 ">
-                                <a href="#" className="text-[16px] font-normal text-gray whitespace-nowrap text-slate-600">View all</a>
+                                <a href="#" className="text-[16px] font-normal text-gray whitespace-nowrap ">View all</a>
                                 <FiArrowUpRight className='text-slate-600 w-6 h-6' />
                             </div>
                         </div>
@@ -102,11 +102,11 @@ function Automative_events() {
                     <div className="right_section mt-10 md:col-span-2 md:mt-0">
                         <div className='grid grid-row-3 gap-10'>
                             <div className="subs w-full border border-slate-200 rounded-lg p-5 bg-white">
-                                <p className='text-primary text-xl font-medium mb-2 md:text-l'>Subscribe to our Newsletter</p>
+                                <p className='text-purple text-xl font-medium mb-2 md:text-l'>Subscribe to our Newsletter</p>
                                 <p className='text-slate-500'>Stay up to date with the latest news via email. We hate spam!</p>
                                 <div className="email my-5">
                                     <label htmlFor="" className='text-gray-600 font-medium'>Email</label>
-                                    <input type="email" className='rounded-md p-4 bg-gray-100 w-full h-[49px] mt-[6px]' />
+                                    <input type="email" className='rounded-md p-4 bg-zinc-100 w-full h-[49px] mt-[6px]' />
                                 </div>
                                 <div className="chk flex ">
                                     <label htmlFor="" className=''>
@@ -115,13 +115,13 @@ function Automative_events() {
                                     </label>
                                 </div>
                                 <div className="subs_btn mt-5">
-                                    <button className='bg-primary py-[14px] px-5 text-white rounded-xl'>
+                                    <button className='bg-purple py-[14px] px-5 text-white rounded-xl'>
                                         Subscribe
                                     </button>
                                 </div>
                             </div>
                             <div className="disc">
-                                <p className='text-primary text-xl font-medium mb-2 md:text-l'>Discover More</p>
+                                <p className='text-purple text-xl font-medium mb-2 md:text-l'>Discover More</p>
                                 <div className="flex flex-wrap gap-5 mt-5">
                                     <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>4 Wheeler</button>
                                     <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>4 Wheeler</button>
@@ -132,17 +132,17 @@ function Automative_events() {
                                 </div>
                             </div>
                             <div className="touch">
-                                <p className='text-primary text-xl font-medium mb-5 md:text-l'>Get in Touch</p>
+                                <p className='text-purple text-xl font-medium mb-5 md:text-l'>Get in Touch</p>
                                 <div className='flex flex-wrap gap-y-5'>
-                                    <button className='text-primary bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-purple bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
                                         <img src={ffb} alt="" />
                                         <span className='absolute pl-8'>Facebook</span>
                                     </button>
-                                    <button className='text-primary bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-purple bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
                                         <img src={finsta} alt="" />
                                         <span className='absolute pl-8'>LinkedIn</span>
                                     </button>
-                                    <button className='text-primary bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-purple bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
                                         <img src={ftwitter} alt="" />
                                         <span className='absolute pl-8'>Twitter</span>
                                     </button>

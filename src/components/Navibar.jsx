@@ -6,9 +6,10 @@ import Menu_categories from "./Menu_categories"
 import auto from "../assets/auto 1.png"
 
 
-const Navibar = () => {
+const Navibar = ({ setCondition }) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [open, setopen] = useState(false)
+    const isNotHome = location.pathname !== '/Autotalk/';
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,16 +23,17 @@ const Navibar = () => {
         // Add event listener for scroll
         window.addEventListener("scroll", handleScroll);
 
+        setCondition(isNotHome);
         // Clean up event listener on unmount
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
-    }, []);
+    }, [setCondition]);
 
     return (
         <>
-            <main className={`fixed w-full bg-sky-100 shadow-sm z-50 ml-[-32px] xl:ml-[-17.8rem] ${isScrolled ? "mt-[-65px]" : "mt-[0px]"} `} >
-                <nav className={`flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal md:border-b border-b-none ${isScrolled ? "mt-[20px]" : "mt-[0px]"} ${open ? 'hidden' : 'block'}`}>
+            <main className={`fixed w-full  shadow-sm z-50 ${isScrolled ? "mt-[-65px] bg-sky-100" : "mt-[0px] "}  ${isNotHome ? '' : 'bg-sky-100'}`} >
+                <nav className={`flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal md:border-b border-blue-300 border-b-none ${isScrolled ? "mt-[20px] pt-5" : "mt-[0px]"} ${open ? 'hidden' : 'block'}`}>
                     <div className="lg:flex hidden gap-8">
                         <select
                             name="NewAuto"
@@ -52,15 +54,15 @@ const Navibar = () => {
                     </div>
 
                     <figure>
-
-                        <img src={auto} alt="logo" className="sm:w-[300px] xl:mx-20" />
-
+                        <Link to={"/Autotalk/"}>
+                            <img src="./auto 1.png" alt="logo" className="sm:w-[300px]" />
+                        </Link>
                     </figure>
 
                     <div className="xl:flex hidden items-center gap-4 whitespace-nowrap">
-
-                        <p className="">Car Buying Goods</p>
-
+                        <Link to="/Autotalk/products">
+                            <p className="">Car Buying Goods</p>
+                        </Link>
                         <select
                             name="Motorsports"
                             id="MotorSports"
@@ -68,9 +70,9 @@ const Navibar = () => {
                         >
                             <option value="Motorsports">Motorsports</option>
                         </select>
-
-                        <p className="cursor-pointer">EMI Calculator</p>
-
+                        <Link to="/Autotalk/Emipage">
+                            <p className="cursor-pointer">EMI Calculator</p>
+                        </Link>
                     </div>
                     <div className="ml-4 flex items-center gap-4 text-2xl cursor-pointer">
                         <CiSearch />
