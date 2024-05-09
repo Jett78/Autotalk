@@ -6,9 +6,8 @@ import Menu_categories from "./Menu_categories"
 import auto from "../assets/auto 1.png"
 
 
-const Navibar = ({ setCondition }) => {
+const Navibar = ({ setCondition, setopen, open }) => {
     const [isScrolled, setIsScrolled] = useState(false);
-    const [open, setopen] = useState(false)
     const isNotHome = location.pathname !== '/Autotalk/';
 
     useEffect(() => {
@@ -32,7 +31,7 @@ const Navibar = ({ setCondition }) => {
 
     return (
         <>
-            <main className={`fixed w-full  shadow-sm z-50 ${isScrolled ? "mt-[-65px] bg-sky-100" : "mt-[0px] "}  ${isNotHome ? '' : 'bg-sky-100'}`} >
+            <main className={`fixed w-full  shadow-sm z-50 ${isScrolled ? "mt-[-111px] bg-sky-100" : "mt-[0px] "}  ${isNotHome ? '' : 'bg-sky-100'}`} >
                 <nav className={`flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal md:border-b border-blue-300 border-b-none ${isScrolled ? "mt-[20px] pt-5" : "mt-[0px]"} ${open ? 'hidden' : 'block'}`}>
                     <div className="lg:flex hidden gap-8">
                         <select
@@ -53,7 +52,7 @@ const Navibar = ({ setCondition }) => {
                         </select>
                     </div>
 
-                    <figure>
+                    <figure className="md:mx-24">
                         <Link to={"/Autotalk/"}>
                             <img src="./auto 1.png" alt="logo" className="sm:w-[300px]" />
                         </Link>
@@ -77,10 +76,13 @@ const Navibar = ({ setCondition }) => {
                     <div className="ml-4 flex items-center gap-4 text-2xl cursor-pointer">
                         <CiSearch />
                         <RxHamburgerMenu onClick={() => setopen(!open)} />
+                        {/* <Link to="/Autotalk/Menu_categories">
+                            <RxHamburgerMenu onClick={() => setopen(!open)} />
+                        </Link> */}
                     </div>
                 </nav>
-                <Menu_categories open={open} setopen={setopen} />
             </main>
+            {/* <Menu_categories open={open} setopen={setopen} /> */}
         </>
     );
 };

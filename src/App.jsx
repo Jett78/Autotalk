@@ -10,30 +10,33 @@ import Products from './Pages/Products'
 import Header from './Components/Header'
 import Navbar from './Components/Navbar'
 import { useState } from 'react'
-import Most_read_section from "./Components/Most_read_section"
-import Categories_section from "./Components/Categories_section"
-import Comparisons_section from "./Components/Comparisons_section"
+import Menu_categories from "./Components/Menu_categories"
 import Car_details from "./Components/Car_details"
 import Automative_events from "./Components/Automative_events"
 import Navibar from "./Components/Navibar"
 
 const App = () => {
   const [condition, setCondition] = useState(false)
+  const [open, setopen] = useState(false)
 
   return (
-    <main>
-      <Header />
-      <BrowserRouter>
-        <Navibar setCondition={setCondition} />
-        <Routes>
-          <Route path="/Autotalk/" element={<Home />}></Route>
-          <Route path="/Autotalk/Products" element={<Products />}></Route>
-          <Route path="/Autotalk/ProductDescription" element={<ProductDescription />}></Route>
-          <Route path="/Autotalk/Emipage" element={<Emipage />}></Route>
-          <Route path="/Autotalk/4-Wheeler" element={<Car_details />}></Route>
-        </Routes>
-      </BrowserRouter>
-      <Footer />
+    <main >
+      <Menu_categories open={open} setopen={setopen} />
+      <div className={`routes ${open ? 'hidden' : 'block'}`}>
+        <Header />
+        <BrowserRouter>
+          <Navibar setCondition={setCondition} setopen={setopen} open={open} />
+          <Routes>
+            <Route path="/Autotalk/" element={<Home />}></Route>
+            {/* <Route path="/Autotalk/Menu_categories" element={<Menu_categories />}></Route> */}
+            <Route path="/Autotalk/Products" element={<Products />}></Route>
+            <Route path="/Autotalk/ProductDescription" element={<ProductDescription />}></Route>
+            <Route path="/Autotalk/Emipage" element={<Emipage />}></Route>
+            <Route path="/Autotalk/4-Wheeler" element={<Car_details />}></Route>
+          </Routes>
+        </BrowserRouter>
+        <Footer />
+      </div>
     </main>
   )
 }
