@@ -33,7 +33,7 @@ function Menu_categories({ open, setopen }) {
 
     return (
         <>
-            <div className={`menu-category bg-menu_blue w-full xl:m-[0_0_0_0] flex flex-row xl:p-[40px_0_40px_0] xl:w-[1920px] box-sizing-border ${open ? 'block mt-0' : 'hidden'}`}>
+            <div className={`menu-category bg-menu_blue w-full xl:m-[0_0_0_0] flex flex-row  xl:p-[40px_0_40px_0] xl:w-[1920px] box-sizing-border ${open ? 'block mt-0' : 'hidden'}`}>
                 <div className="container mx-0 xl:mx-[300px] ">
                     <div className="header flex justify-between items-center bg-white pr-5 lg:bg-menu_blue lg:px-5">
                         <div className="logo">

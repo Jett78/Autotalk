@@ -16,7 +16,7 @@ import Car_details from '../Components/Car_details'
 
 const Home = () => {
   return (
-    <main className='mt-[110px]'>
+    <main>
       <Herosection />
       <Most_read_section />
       <Categories_section />

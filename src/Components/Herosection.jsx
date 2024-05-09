@@ -3,8 +3,8 @@ import React from "react";
 
 const Herosection = () => {
   return (
-    <main className="hero_section bg-sky-100 max-h-[750px] w-full p-5">
-      <div className="mt-20 md:py-16 py-10">
+    <main className="hero_section bg-sky-100 max-h-[750px] w-full p-4 mt-[2em] ">
+      <div className="md:mt-20 mt-6 py-4">
         <h2 className="animate-slideleft font-semibold md:text-[42px] px-4 text-xl  text-purple text-center mx-auto max-w-[1096px] tracking-wide leading-[145%]">
           Get Latest updates on what's going on AutoEcosystem in Nepal
         </h2>
