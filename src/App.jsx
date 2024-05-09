@@ -9,6 +9,7 @@ import Emipage from './Pages/Emipage'
 import Products from './Pages/Products'
 import Header from './Components/Header'
 import { useState } from 'react'
+import Car_details from "./Components/Car_details"
 import Navibar from "./Components/Navibar"
 
 const App = () => {
