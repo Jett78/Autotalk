@@ -25,7 +25,7 @@ function Comments() {
                                     <input type="text" className='bg-zinc-100 h-[49px] rounded-lg w-full' />
                                 </div>
                                 <div className="name">
-                                    <p className='text-zinc-500 mb-[6px]'>Email</p>
+                                    <p className='text-zinc-500 mb-[6px] '>Email</p>
                                     <input type="email" className='bg-zinc-100 h-[49px] rounded-lg  w-full' />
                                 </div>
                             </div>

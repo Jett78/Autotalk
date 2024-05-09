@@ -9,7 +9,7 @@ function Lower_section() {
     return (
         <>
             <div className="lower-section mt-5 md:mt-10 ">
-                <div className="flex flex-wrap justify-center gap-4 ">
+                <div className="flex flex-wrap justify-center gap-4">
                     <Link to="/Autotalk/4-Wheeler">
                         <div className="mt-10 rounded-xl sm:mt-0 md:w-[427px] h-[329px]">
                             <div className="md:shrink-0">

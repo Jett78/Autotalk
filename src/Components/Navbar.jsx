@@ -2,9 +2,13 @@ import React, { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import Menu_categories from "./Menu_categories"
+import auto from "../assets/auto 1.png"
 
-const Navbar = () => {
+
+const Navbar = ({ setCondition, setopen, open }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const isNotHome = location.pathname !== '/Autotalk/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,16 +22,17 @@ const Navbar = () => {
     // Add event listener for scroll
     window.addEventListener("scroll", handleScroll);
 
+    setCondition(isNotHome);
     // Clean up event listener on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [setCondition]);
 
   return (
     <>
-      <main className={`fixed w-full bg-primary shadow-sm z-50 ${isScrolled ? "mt-[-65px]" : "mt-[0px]"}`} >
-        <nav className="flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal">
+      <main className={`fixed w-full  shadow-sm z-50 ${isScrolled ? "mt-[-65px] bg-sky-100" : "mt-[0px] "}  ${isNotHome ? '' : 'bg-sky-100'}`} >
+        <nav className={`flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal md:border-b border-blue-300 border-b-none ${isScrolled ? "mt-[20px] pt-5" : "mt-[0px]"} ${open ? 'hidden' : 'block'}`}>
           <div className="lg:flex hidden gap-8">
             <select
               name="NewAuto"
@@ -47,14 +52,14 @@ const Navbar = () => {
             </select>
           </div>
 
-          <figure>
-            <Link to={"/"}>
+          <figure className="md:mx-24">
+            <Link to={"/Autotalk/"}>
               <img src="./auto 1.png" alt="logo" className="sm:w-[300px]" />
             </Link>
           </figure>
 
           <div className="xl:flex hidden items-center gap-4 whitespace-nowrap">
-            <Link to="/products">
+            <Link to="/Autotalk/products">
               <p className="">Car Buying Goods</p>
             </Link>
             <select
@@ -64,16 +69,20 @@ const Navbar = () => {
             >
               <option value="Motorsports">Motorsports</option>
             </select>
-            <Link to="/Emipage">
+            <Link to="/Autotalk/Emipage">
               <p className="cursor-pointer">EMI Calculator</p>
             </Link>
           </div>
           <div className="ml-4 flex items-center gap-4 text-2xl cursor-pointer">
             <CiSearch />
-            <RxHamburgerMenu />
+            <RxHamburgerMenu onClick={() => setopen(!open)} />
+            {/* <Link to="/Autotalk/Menu_categories">
+                            <RxHamburgerMenu onClick={() => setopen(!open)} />
+                        </Link> */}
           </div>
         </nav>
       </main>
+      {/* <Menu_categories open={open} setopen={setopen} /> */}
     </>
   );
 };

@@ -12,7 +12,7 @@ import { useState } from 'react'
 import Menu_categories from "./Components/Menu_categories"
 import Car_details from "./Components/Car_details"
 import Automative_events from "./Components/Automative_events"
-import Navibar from "./Components/Navibar"
+import Navbar from "./Components/Navbar"
 
 const App = () => {
   const [condition, setCondition] = useState(false)
@@ -24,7 +24,7 @@ const App = () => {
       <div className={`routes ${open ? 'hidden' : 'block'}`}>
         <Header />
         <BrowserRouter>
-          <Navibar setCondition={setCondition} setopen={setopen} open={open} />
+          <Navbar setCondition={setCondition} setopen={setopen} open={open} />
           <Routes>
             <Route path="/Autotalk/" element={<Home />}></Route>
             {/* <Route path="/Autotalk/Menu_categories" element={<Menu_categories />}></Route> */}

@@ -93,7 +93,7 @@ function Automative_events() {
                             </div>
                         </div>
                     </div>
-                    <div className="right_section mt-10 md:col-span-2 md:mt-0">
+                    <div className="right_section mt-10 md:col-span-2 md:mt-0 ">
                         <div className='grid grid-row-3 gap-10'>
                             <div className="subs w-full border border-slate-200 rounded-lg p-5 bg-white">
                                 <p className='text-purple text-xl font-medium mb-2 md:text-l'>Subscribe to our Newsletter</p>
