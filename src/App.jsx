@@ -9,7 +9,6 @@ import Emipage from './Pages/Emipage'
 import Products from './Pages/Products'
 import Header from './Components/Header'
 import { useState } from 'react'
-import Car_details from './Components/Car_details'
 import Navibar from "./Components/Navibar"
 
 const App = () => {
@@ -25,7 +24,6 @@ const App = () => {
           <Route path="/Autotalk/Products" element={<Products />}></Route>
           <Route path="/Autotalk/ProductDescription" element={<ProductDescription />}></Route>
           <Route path="/Autotalk/Emipage" element={<Emipage />}></Route>
-          <Route path="/Autotalk/4-Wheeler" element={<Car_details />}></Route>
         </Routes>
       </BrowserRouter>
       <Footer />
