@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
+import Hamburgermenu from "./Hamburgermenu";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isOpen,setIsOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -70,10 +72,13 @@ const Navbar = () => {
           </div>
           <div className="ml-4 flex items-center gap-4 text-2xl cursor-pointer">
             <CiSearch />
-            <RxHamburgerMenu />
+            <RxHamburgerMenu onClick={()=>setIsOpen(!isOpen)} />
           </div>
         </nav>
+
+        <Hamburgermenu isOpen={isOpen} setIsOpen={setIsOpen}/>
       </main>
+     
     </>
   );
 };
