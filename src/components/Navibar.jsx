@@ -31,7 +31,7 @@ const Navibar = ({ setCondition, setopen, open }) => {
 
     return (
         <>
-            <main className={`fixed w-full  shadow-sm z-50 ${isScrolled ? "mt-[-111px] bg-sky-100" : "mt-[0px] "}  ${isNotHome ? '' : 'bg-sky-100'}`} >
+            <main className={`fixed w-full  shadow-sm z-50 ${isScrolled ? "mt-[-65px] bg-sky-100" : "mt-[0px] "}  ${isNotHome ? '' : 'bg-sky-100'}`} >
                 <nav className={`flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal md:border-b border-blue-300 border-b-none ${isScrolled ? "mt-[20px] pt-5" : "mt-[0px]"} ${open ? 'hidden' : 'block'}`}>
                     <div className="lg:flex hidden gap-8">
                         <select

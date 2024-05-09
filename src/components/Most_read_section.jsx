@@ -9,7 +9,7 @@ function Most_read_section() {
     return (
         <>
             <div className='mx-[20px]'>
-                <Link to="#">
+                <Link to="/Autotalk/4-Wheeler">
                     <section className="most-read mt-24 mx-auto max-w-[1320px]">
                         <div className="container">
                             <div className="title">
