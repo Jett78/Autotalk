@@ -8,13 +8,8 @@ import ProductDescription from './Pages/ProductDescription'
 import Emipage from './Pages/Emipage'
 import Products from './Pages/Products'
 import Header from './Components/Header'
-import Navbar from './Components/Navbar'
 import { useState } from 'react'
-import Most_read_section from "./Components/Most_read_section"
-import Categories_section from "./Components/Categories_section"
-import Comparisons_section from "./Components/Comparisons_section"
 import Car_details from "./Components/Car_details"
-import Automative_events from "./Components/Automative_events"
 import Navibar from "./Components/Navibar"
 
 const App = () => {
