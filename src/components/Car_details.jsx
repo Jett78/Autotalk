@@ -21,21 +21,21 @@ function Car_details() {
             <div className='mx-auto max-w-[1320px] p-10 md:pt-24'>
                 <section className='details mt-24 '>
                     <div className="banner">
-                        <img src={container} alt="" />
+                        <img src={container} alt="img" />
                     </div>
                 </section>
                 <section className='md:grid grid-cols-14 gap-[36px] mt-10'>
                     <div className="media flex justify-between md:block">
                         <ul className='flex space-y-0 space-x-4 md:block md:space-y-4 md:space-x-0'>
-                            <li><img src={fb} alt="" /></li>
-                            <li><img src={insta} alt="" /></li>
-                            <li><img src={twitter} alt="" /></li>
+                            <li><img src={fb} alt="imm" /></li>
+                            <li><img src={insta} alt="img" /></li>
+                            <li><img src={twitter} alt="img" /></li>
                         </ul>
                         <div className="views mt-[-14px] md:my-5 relative right-3">
-                            <img src={views} alt="" />
+                            <img src={views} alt="img" />
                         </div>
                         <div className="msg">
-                            <img src={msg} alt="" />
+                            <img src={msg} alt="img" />
                         </div>
                     </div>
                     <div className="info md:col-span-9">
