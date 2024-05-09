@@ -8,7 +8,6 @@ import ProductDescription from './Pages/ProductDescription'
 import Emipage from './Pages/Emipage'
 import Products from './Pages/Products'
 import Header from './Components/Header'
-import Navbar from './Components/Navbar'
 import { useState } from 'react'
 import Menu_categories from "./Components/Menu_categories"
 import Car_details from "./Components/Car_details"

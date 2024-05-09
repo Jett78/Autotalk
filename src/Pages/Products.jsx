@@ -25,7 +25,7 @@ const Products = () => {
 
   return (
     <main>
-      <div className=' text-gray px-2  mt-[4em] sm:pt-10 pt-6 '>
+      <div className=' text-gray px-2  mt-[2em] sm:pt-10 pt-6 '>
         <nav className='max-w-[1320px] mx-auto flex gap-6 border-b py-2 text-xl text-purple font-normal mt-10'>
           <h2 className='hover:font-semibold cursor-pointer'>Tab 01</h2>
           <h2 className='hover:font-semibold cursor-pointer'>Tab 02</h2>

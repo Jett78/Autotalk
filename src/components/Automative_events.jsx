@@ -1,10 +1,6 @@
 import React from 'react'
 import { FiArrowUpRight } from "react-icons/fi";
-import image_58 from '../assets/image 58.png'
-import image_83 from '../assets/image 83.png'
-import image_52 from '../assets/image 52.png'
 import image_59 from '../assets/image 59.png'
-import image_54 from '../assets/image 54.png'
 import image_64 from '../assets/image 64.png'
 import image_63 from '../assets/image 63.png'
 import image_65 from '../assets/image 65.png'
@@ -82,12 +78,10 @@ function Automative_events() {
                                                 <img className="h-full w-full object-contain md:h-full  md:w-full" src={item.img} alt="" />
                                             </div>
                                             <div className="px-6 py-4">
-                                                <div className=" text-slate-600 font-medium tracking-wider mb-3 md:text-lg">{item.name}</div>
-                                                <div className="text-slate-700 sm:text-[14px] text-[12px] flex items-center justify-start gap-4 ">
+                                                <div className=" sm:text-[16px] text-[14px] text-gray ">{item.name}</div>
+                                                <div className="sm:text-[14px] text-[10px] font-normal flex items-center justify-start gap-4 pt-2 text-gray ">
                                                     <p className='flex items-center gap-1'><img src={user} alt="" /> Admin</p>
-                                                    <p>.</p>
                                                     <p>4-wheeler</p>
-                                                    <p>.</p>
                                                     <p>Apr 23, 2023</p>
                                                 </div>
                                             </div>
@@ -106,7 +100,7 @@ function Automative_events() {
                                 <p className='text-slate-500'>Stay up to date with the latest news via email. We hate spam!</p>
                                 <div className="email my-5">
                                     <label htmlFor="" className='text-gray-600 font-medium'>Email</label>
-                                    <input type="email" className='rounded-md p-4 bg-zinc-100 w-full h-[49px] mt-[6px]' />
+                                    <input type="email" className='rounded-md p-4 bg-zinc-100 w-full h-[49px] mt-[6px] outline-none' />
                                 </div>
                                 <div className="chk flex ">
                                     <label htmlFor="" className=''>
@@ -123,26 +117,26 @@ function Automative_events() {
                             <div className="disc">
                                 <p className='text-purple text-xl font-medium mb-2 md:text-l'>Discover More</p>
                                 <div className="flex flex-wrap gap-5 mt-5">
-                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>4 Wheeler</button>
-                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>4 Wheeler</button>
-                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>Bikes</button>
-                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>Scooters</button>
-                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>Comparisons</button>
-                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg border border-gray-300'>Scooters</button>
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg  hover:bg-blue-200 ease-in-out furation-300'>4 Wheeler</button>
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg hover:bg-blue-200 ease-in-out duration-300'>4 Wheeler</button>
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg hover:bg-blue-200 ease-in-out duration-300'>Bikes</button>
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg hover:bg-blue-200 ease-in-out duration-300'>Scooters</button>
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg hover:bg-blue-200 ease-in-out duration-300'>Comparisons</button>
+                                    <button className='py-[10px] px-[14px] bg-slate-50 text-gray-600 rounded-lg hover:bg-blue-200 ease-in-out duration-300'>Scooters</button>
                                 </div>
                             </div>
                             <div className="touch">
                                 <p className='text-purple text-xl font-medium mb-5 md:text-l'>Get in Touch</p>
                                 <div className='flex flex-wrap gap-y-5'>
-                                    <button className='text-purple bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-purple bg-white py-[10px] px-[14px] rounded-lg  w-full text-left flex items-center'>
                                         <img src={ffb} alt="" />
                                         <span className='absolute pl-8'>Facebook</span>
                                     </button>
-                                    <button className='text-purple bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-purple bg-white py-[10px] px-[14px] rounded-lg w-full text-left flex items-center'>
                                         <img src={finsta} alt="" />
                                         <span className='absolute pl-8'>LinkedIn</span>
                                     </button>
-                                    <button className='text-purple bg-white py-[10px] px-[14px] rounded-lg border border-gray-300 w-full text-left flex items-center'>
+                                    <button className='text-purple bg-white py-[10px] px-[14px] rounded-lg  w-full text-left flex items-center'>
                                         <img src={ftwitter} alt="" />
                                         <span className='absolute pl-8'>Twitter</span>
                                     </button>
