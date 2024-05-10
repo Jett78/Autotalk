@@ -55,7 +55,7 @@ function Automative_events() {
     return (
         <>
             <main className='bg-green-100 w-full px-5 mt-20 flex flex-row py-10 xl:p-[100px_0_100px_0] xl:w-[1920px] box-sizing-border'>
-                <section className="comparison_section grid grid-cols-1 gap-y-5 mx-auto xl:mx-[300px]  xl:grid-cols-6 xl:gap-10 ">
+                <section className="comparison_section grid grid-cols-1  gap-y-5 mx-auto xl:mx-[300px] xl:grid-cols-6 xl:gap-10 ">
                     <div className="left_section md:col-span-4">
                         <div className="container flex justify-between">
                             <div className="title">
