@@ -3,7 +3,7 @@ import image_58 from '../assets/image 58.png'
 import image_83 from '../assets/image 83.png'
 import user from '../assets/user.png'
 import { FiArrowUpRight } from "react-icons/fi";
-import Lower_section from "./Lower_section"
+
 
 function Comparisons_section() {
     return (
@@ -51,7 +51,6 @@ function Comparisons_section() {
                                 </div>
                             </div>
                         </div>
-                        <Lower_section />
                     </section>
                 </section >
             </div>

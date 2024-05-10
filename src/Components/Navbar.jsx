@@ -2,12 +2,11 @@ import React, { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
-import Menu_categories from "../components/Menu_categories"
+
 
 
 const Navbar = ({ setCondition, setopen, open }) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const isNotHome = location.pathname !== '/Autotalk/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -21,17 +20,17 @@ const Navbar = ({ setCondition, setopen, open }) => {
     // Add event listener for scroll
     window.addEventListener("scroll", handleScroll);
 
-    setCondition(isNotHome);
+
     // Clean up event listener on unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [setCondition]);
+  }, []);
 
   return (
     <>
-      <main className={`fixed w-full  shadow-sm z-50 ${isScrolled ? "mt-[-65px] bg-sky-100" : "mt-[0px] "}  ${isNotHome ? '' : 'bg-sky-100'}`} >
-        <nav className={`flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] md:py-8 py-6 text-gray text-[14px] font-normal md:border-b border-blue-300 border-b-none ${isScrolled ? "mt-[20px] pt-5" : "mt-[0px]"} ${open ? 'hidden' : 'block'}`}>
+      <main className={`fixed w-full  shadow-sm z-50 ${isScrolled ? "mt-[-65px] bg-sky-100" : "mt-[0px] "} `} >
+        <nav className={`flex items-center xl:justify-center justify-between md:gap-6 gap-20 px-4 bg-transparent w-full max-h-[110px] bg-zinc-100 md:pt-10 py-6 text-gray text-[14px] font-normal md:border-b border-blue-300 border-b-none ${isScrolled ? "mt-[20px] pt-5" : "mt-[0px]"} ${open ? 'hidden' : 'block'}`}>
           <div className="lg:flex hidden gap-8">
             <select
               name="NewAuto"
@@ -75,15 +74,12 @@ const Navbar = ({ setCondition, setopen, open }) => {
           <div className="ml-4 flex items-center gap-4 text-2xl cursor-pointer">
             <CiSearch />
             <RxHamburgerMenu onClick={() => setopen(!open)} />
-            {/* <Link to="/Autotalk/Menu_categories">
-                            <RxHamburgerMenu onClick={() => setopen(!open)} />
-                        </Link> */}
           </div>
         </nav>
 
         {/* <Hamburgermenu isOpen={isOpen} setIsOpen={setIsOpen} /> */}
       </main>
-      <Menu_categories open={open} setopen={setopen} />
+      
     </>
   );
 };
