@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { Link } from "react-router-dom";
-import Menu_categories from "./Menu_categories"
-import auto from "../assets/auto 1.png"
+
 
 
 const Navibar = ({ setCondition, setopen, open }) => {
