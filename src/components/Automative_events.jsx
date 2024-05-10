@@ -8,7 +8,7 @@ import { FaTwitter } from "react-icons/fa";
 const Automative_events = () => {
   const onlyfour = innovation.slice(0, 4);
   return (
-    <main className="min-h-[750px] bg-lightgreen px-2 pt-20 text-gray">
+    <main className="min-h-[750px] bg-lightgreen px-2 py-20 text-gray my-4">
       <div className="flex flex-wrap gap-8 justify-center ">
         <div>
           <h2 className="text-[24px] text-purple font-semibold pb-4 mb-6">See what happening new in Auto</h2>
@@ -19,7 +19,7 @@ const Automative_events = () => {
           </section>
         </div>
 
-        <section>
+        <section className="grid 2xl:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-8">
           <form
             action="#"
             className="grid gap-2 max-w-[361px] h-[330px] bg-white rounded-lg p-4 shadow-lg"

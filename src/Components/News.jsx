@@ -19,7 +19,7 @@ const News = () => {
           </section>
         </div>
 
-        <section>
+        <section  className="grid 2xl:grid-cols-1 md:grid-cols-2 grid-cols-1 gap-8">
           <form
             action="#"
             className="grid gap-2 max-w-[361px] h-[330px] bg-white rounded-lg p-4 shadow-lg"
