@@ -81,8 +81,10 @@ const Navbar = ({ setCondition, setopen, open }) => {
                         </Link> */}
           </div>
         </nav>
+
+        {/* <Hamburgermenu isOpen={isOpen} setIsOpen={setIsOpen} /> */}
       </main>
-      {/* <Menu_categories open={open} setopen={setopen} /> */}
+      <Menu_categories open={open} setopen={setopen} />
     </>
   );
 };

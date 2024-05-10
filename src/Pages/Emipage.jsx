@@ -6,8 +6,8 @@ import Autoloan from '../Components/Autoloan'
 
 const Emipage = () => {
   return (
-    <main className='md:pt-10 pt-2 mt-[2em]'>
-      <div className='grid justify-center mt-[4em] '>
+    <main>
+      <div className='grid justify-center mt-[4em] md:pt-10 pt-4 mx-2 '>
         <Emi />
         <Banks />
       </div>
