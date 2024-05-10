@@ -54,8 +54,8 @@ function Automative_events() {
 
     return (
         <>
-            <main className='bg-green-100 w-full px-5 mt-20 flex flex-row py-10 xl:p-[100px_0_100px_0] xl:w-[1920px] box-sizing-border'>
-                <section className="comparison_section grid grid-cols-1  gap-y-5 mx-auto xl:mx-[300px] xl:grid-cols-6 xl:gap-10 ">
+            <main className='bg-green-100 w-full px-5 mt-20 flex flex-row py-10 xl:p-[100px_0_100px_0] box-sizing-border'>
+                <section className="comparison_section grid grid-cols-1 gap-y-5 mx-auto 2xl:mx-[300px]  2xl:grid-cols-6 xl:gap-10 ">
                     <div className="left_section md:col-span-4">
                         <div className="container flex justify-between">
                             <div className="title">
@@ -70,7 +70,7 @@ function Automative_events() {
                         <hr className='my-3  border-gray-300' />
 
                         <div className="lower-section mt-5 md:mt-10">
-                            <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-5 ">
+                            <div className="grid grid-cols-1 lg:grid-cols-2 grid-rows-2 gap-5 ">
                                 {displayItems.map((item, index) => {
                                     return (
                                         <div key={index} className="bg-slate-50 sm:border border-slate-200 rounded-xl sm:mt-0 md:w-[427px]">
@@ -93,7 +93,7 @@ function Automative_events() {
                             </div>
                         </div>
                     </div>
-                    <div className="right_section mt-10 md:col-span-2 md:mt-0">
+                    <div className="right_section mt-10 md:col-span-2 md:mt-0 ">
                         <div className='grid grid-row-3 gap-10'>
                             <div className="subs w-full border border-slate-200 rounded-lg p-5 bg-white">
                                 <p className='text-purple text-xl font-medium mb-2 md:text-l'>Subscribe to our Newsletter</p>
