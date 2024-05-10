@@ -10,12 +10,12 @@ import UserReviews from '../Components/UserReviews'
 import SimilarProducts from '../Components/SimilarProducts'
 import News from '../Components/News'
 import Subscribe from '../Components/Subscribe'
-import Footer from '../Components/Footer'
+
 
 const ProductDescription = () => {
   return (
    <main>
-    <div className=''>
+    <div>
         <div>
         {Tesla.map((tesla,index) => (
            <div key={index}>
@@ -24,7 +24,7 @@ const ProductDescription = () => {
            </div>
         ))}
         </div>
-        <div className='mt-10 flex flex-wrap justify-center gap-5'>
+        <div className='mt-10 flex flex-wrap justify-center max-w-[1350px] mx-auto gap-5'>
           <Emi/>
           <Banks/>
         </div>

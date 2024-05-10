@@ -2,7 +2,7 @@ import React from "react";
 
 const Subscribe = () => {
   return (
-    <main className="w-full mx-auto px-2 max-h-[440px] rounded-3xl mt-10 py-8  bg-purple text-white text-center tracking-wide">
+    <main className="max-w-[1200px] xl:mx-auto mx-4 px-2 max-h-[440px] rounded-3xl mt-10 py-8  bg-purple text-white text-center tracking-wide">
       <div className="border-b sm:mx-20">
         <h2 className="sm:text-[32px] text-[24px] font-semibold font-serif ">Subscribe our Newsletter!</h2>
         <p className="py-4 font-regular sm:text-[16px] text-[14px] ">Never miss an update</p>

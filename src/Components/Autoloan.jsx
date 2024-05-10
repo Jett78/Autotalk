@@ -2,7 +2,7 @@ import React from 'react'
 
 const Autoloan = () => {
   return (
-    <main className="max-w-[1321px] lg:mx-auto mx-2 px-3 min-h-[350px] rounded-3xl mt-10 py-8  bg-darkpurple text-white  tracking-wide">
+    <main className="max-w-[1321px] xl:mx-auto mx-4 px-3 min-h-[350px] rounded-3xl mt-10 py-8  bg-darkpurple text-white  tracking-wide">
     <div className="border-b sm:mx-20">
       <h2 className="sm:text-[32px] text-[24px] font-semibold font-serif ">Interested In Auto Loan?</h2>
       <p className="py-4 font-regular sm:text-[16px] text-[14px] font-normal">We have partnered with Banks and Insurance to make your purchase smooth.</p>

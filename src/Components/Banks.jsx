@@ -2,7 +2,7 @@ import React from 'react'
 
 const Banks = () => {
   return (
-    <main className='max-w-[650px] mb-6 px-2'>
+    <main className='max-w-[650px] mb-6 px-2 '>
     <h2 className="text-[24px] text-purple font-semibold border-b py-3">Banking Partners for Emi</h2>
     <div className='flex flex-wrap md:justify-start justify-center gap-8 mt-4'>
         <img src="./banks/image 156.png" alt="bank" />
