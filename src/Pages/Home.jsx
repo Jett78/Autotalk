@@ -10,6 +10,7 @@ import Comparisons_section from '../Components/Comparisons_section'
 import Automative_events from '../Components/Automative_events'
 
 
+
 const Home = () => {
   return (
     <main>
