@@ -18,7 +18,7 @@ function Categories_section() {
     return (
         <>
             <div className='mx-[20px]'>
-                <section className='categories mt-24 mx-auto max-w-[1320px]'>
+                <section className='categories mt-24 mx-auto max-w-[1320px] '>
                     <div className="container">
                         <div className="title">
                             <p className='text-purple text-xl font-medium mb-2 md:text-3xl'>Categories</p>

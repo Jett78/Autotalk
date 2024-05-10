@@ -13,13 +13,15 @@ import right_arrow from "../assets/right_arrow_3.png"
 import black_car from "../assets/black car.png"
 import red_carr from "../assets/red car(2).png"
 import { useEffect } from 'react'
-
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 
 function Menu_categories({ open, setopen }) {
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1024);
-
+    AOS.init();
     useEffect(() => {
+
         const handleResize = () => {
             setIsSmallScreen(window.innerWidth < 1024);
         };
@@ -33,25 +35,25 @@ function Menu_categories({ open, setopen }) {
 
     return (
         <>
-            <div className={`menu-category bg-menu_blue w-full xl:m-[0_0_0_0] flex flex-row  xl:p-[40px_0_40px_0] xl:w-[1920px] box-sizing-border ${open ? 'block mt-0' : 'hidden'}`}>
-                <div className="container mx-0 xl:mx-[300px] ">
-                    <div className="header flex justify-between items-center bg-white pr-5 lg:bg-menu_blue lg:px-5">
-                        <div className="logo">
-                            <img src={auto} alt="" />
+            <div className={`menu-category bg-menu_blue w-full md:max-h-[1020px] grid grid-rows-12 justify-center xl:p-[20px_0_20px_0] box-sizing-border ${open ? 'block' : 'hidden'}`} >
+                <div className="header w-full row-span-1 flex justify-between items-center bg-white pr-5 lg:bg-menu_blue lg:px-5">
+                    <div className="logo ">
+                        <img src={auto} alt="" />
+                    </div>
+                    <div className="controller flex items-center gap-5">
+                        <div className="menu-search">
+                            {
+                                isSmallScreen ? <img src={bsearch} alt="" /> : <img src={search} alt="" />
+                            }
                         </div>
-                        <div className="controller flex items-center gap-5">
-                            <div className="menu-search">
-                                {
-                                    isSmallScreen ? <img src={bsearch} alt="" /> : <img src={search} alt="" />
-                                }
-                            </div>
-                            <div className="menu-cross" onClick={() => setopen(!open)}>
-                                {
-                                    isSmallScreen ? <img src={bcross} alt="" /> : <img src={cross} alt="" />
-                                }
-                            </div>
+                        <div className="menu-cross" onClick={() => setopen(!open)}>
+                            {
+                                isSmallScreen ? <img src={bcross} alt="" /> : <img src={cross} alt="" />
+                            }
                         </div>
                     </div>
+                </div>
+                <div className="row-span-11">
                     <div className="title mt-[10px]">
                         <p className='font-playfair text-2xl text-white text-center'>Categories</p>
                     </div>
@@ -132,7 +134,7 @@ function Menu_categories({ open, setopen }) {
                             </div>
                         </div>
                     </div>
-                    <div className="footer  mt-[130px]">
+                    <div className="footer  mt-[80px]">
                         <div className="car_images flex justify-between items-center">
                             <img src={red_car} alt="" className='w-[53.33px] md:w-[130px] xl:w-[185.12px]' />
                             <img src={blue_car} alt="" className='w-[53.33px] md:w-[130px] xl:w-[185.12px]' />
