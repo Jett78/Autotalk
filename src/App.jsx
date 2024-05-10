@@ -9,9 +9,9 @@ import Emipage from './Pages/Emipage'
 import Products from './Pages/Products'
 import Header from './Components/Header'
 import { useState } from 'react'
-import Menu_categories from "./components/Menu_categories"
-import Car_details from "./components/Car_details"
-import Automative_events from "./components/Automative_events"
+import Menu_categories from "./Components/Menu_categories"
+import Car_details from "./Components/Car_details"
+import Automative_events from "./Components/Automative_events"
 import Navbar from "./Components/Navbar"
 
 const App = () => {
