@@ -42,3 +42,39 @@
     border: 1px solid rgb(185, 185, 185);
   }
 
+  /* Style the select element */
+.custom-select {
+  /* Define your custom styles for the select */
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  /* Add any additional styles you want */
+}
+
+/* Style the dropdown arrow */
+.custom-select::-ms-expand {
+  display: none; /* Hide the default arrow in IE Edge */
+}
+
+.custom-select::-webkit-select-arrow {
+  display: none; /* Hide the default arrow in Chrome/Safari */
+}
+
+.custom-select::after {
+  content: '\25BC';  /* Unicode character for down arrow */
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none; /* Make sure the arrow doesn't interfere with clicking on the select */
+}
+
+/* Style the dropdown menu */
+.custom-select option {
+  /* Define your custom styles for the options */
+  background-color: white;
+  padding: 4px; /* Adjust padding as needed */
+  /* Add any additional styles you want */
+}
+
+
