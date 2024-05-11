@@ -1,9 +1,11 @@
 import React from "react";
-
-
+import useEmblaCarousel from 'embla-carousel-react'
+import Autoplay from 'embla-carousel-autoplay'
 const Herosection = () => {
+  const [emblaRef] = useEmblaCarousel({loop:true, autoplaySpeed: 10,autoplayInterval: 500,},[Autoplay()])
   return (
-    <main className=" bg-sky-100 max-h-[750px] w-full p-4 mt-[2em] ">
+    <main className=" bg-sky-100 max-h-[700px] w-full p-4 mt-[2em] curve">
+
       <div className="sm:mt-20 mt-10 py-4">
         <h2 className="animate-slideleft font-semibold md:text-[42px] px-4 text-xl  text-purple text-center mx-auto max-w-[1096px] tracking-wide leading-[145%]">
           Get Latest updates on what's going on AutoEcosystem in Nepal
@@ -14,9 +16,18 @@ const Herosection = () => {
           daily basis. All resources published here are fact-checked and proof
           read so you can enjoy and get updates on what happening here at Nepal.
         </p>
-        <figure>
-          <img src="./div.png" alt="herosection" className="mx-auto animate-slideleft" />
-        </figure>
+        {/* <figure>
+          <img src="./div.png" alt="herosection" className="mx-auto animate-slideleft " />
+        </figure> */}
+        <div className="embla mx-auto mt-12 h-56 flex" ref={emblaRef}>
+      <div className="embla__container">
+        <div className="embla__slide flex items-center justify-center"><img src="./cars/blackcar.png" alt="./cars/blackcar.png" /></div>
+        <div className="embla__slide flex items-center justify-center"><img src="./cars/redcar.png" alt="./cars/blackcar.png" /></div>
+        <div className="embla__slide flex items-center justify-center"><img src="./cars/bluecar.png" alt="./cars/blackcar.png" /></div>
+        <div className="embla__slide flex items-center justify-center"><img src="./cars/orangecar.png" alt="./cars/blackcar.png" /></div>
+        
+      </div>
+    </div>
       </div>
     </main>
   );
