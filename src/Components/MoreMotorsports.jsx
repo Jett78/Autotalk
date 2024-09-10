@@ -1,9 +1,9 @@
 import React from "react";
-import {cars} from "../db/Data"
-import {bikes} from "../db/Data"
+import { cars } from "../db/Data"
+import { bikes } from "../db/Data"
 import MoreMotorsportscard from "./MoreMotorsportscard";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 
 
 const MoreMotorsports = () => {
@@ -31,7 +31,7 @@ const MoreMotorsports = () => {
                 View all
               </a>
             </nav>
-            
+
             <div className="grid gap-8 py-8">
               {cars.map((info, index) => (
                 <MoreMotorsportscard key={index} info={info} />

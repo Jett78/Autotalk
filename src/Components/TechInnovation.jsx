@@ -3,7 +3,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 import TechInnovationCard from "./TechInnovationCard";
 import { innovation } from "../db/Data";
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 
 const TechInnovation = () => {
   const [displayItems, setDisplayItems] = useState([]);
@@ -15,15 +15,15 @@ const TechInnovation = () => {
       setDisplayItems(newSize);
     };
 
-    handleResize(); 
+    handleResize();
 
-    window.addEventListener("resize", handleResize); 
+    window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize); 
-  }, []); 
-  
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <main className="min-h-[600px]  bg-primary pb-8 px-4 my-10" >
+    <main className="min-h-[600px]  bg-sky-100 pb-8 px-4 my-10" >
       <header className="flex justify-between max-w-[1320px] mx-auto md:pt-[100px] pt-10 border-b border-gray" data-aos="fade-right" data-aos-anchor-placement="top-center">
         <div>
           <h2 className="sm:text-[24px] text-[20px] font-semibold text-purple tracking-wide">Tech and Innovation</h2>
@@ -35,7 +35,7 @@ const TechInnovation = () => {
         </div>
       </header>
 
-      <section className="flex flex-wrap justify-center gap-y-6 mt-10" data-aos="fade-right" data-aos-anchor-placement="top-center">
+      <section className="flex flex-wrap justify-center mx-auto gap-y-6 mt-10 max-w-[1370px]" data-aos="fade-right" data-aos-anchor-placement="top-center">
         {displayItems.map((inovdata, index) => (
           <TechInnovationCard key={index} inovdata={inovdata} />
         ))}

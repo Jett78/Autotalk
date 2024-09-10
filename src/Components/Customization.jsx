@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import TechInnovationCard from "./TechInnovationCard";
-import {innovation} from "../db/Data"
+import { innovation } from "../db/Data"
 import AOS from "aos";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 
 const Customization = () => {
- 
+
   const [displayItems, setDisplayItems] = useState([]);
 
   useEffect(() => {
@@ -16,12 +16,12 @@ const Customization = () => {
       setDisplayItems(newSize);
     };
 
-    handleResize(); 
+    handleResize();
 
-    window.addEventListener("resize", handleResize); 
+    window.addEventListener("resize", handleResize);
 
-    return () => window.removeEventListener("resize", handleResize); 
-  }, []); 
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
     <main className="min-h-[600px] px-4 pt-8" data-aos="fade-right">
       <header className="flex justify-between max-w-[1320px] mx-auto border-b border-gray">
@@ -35,9 +35,9 @@ const Customization = () => {
         </div>
       </header>
 
-      <section className="flex flex-wrap justify-center gap-y-6  mt-10">
-        {displayItems.map((inovdata,index) => (
-            <TechInnovationCard key={index} inovdata={inovdata}/>
+      <section className="flex flex-wrap justify-center mx-auto gap-y-6 mt-10 max-w-[1370px]">
+        {displayItems.map((inovdata, index) => (
+          <TechInnovationCard key={index} inovdata={inovdata} />
         ))}
       </section>
     </main>
